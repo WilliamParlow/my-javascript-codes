@@ -58,6 +58,8 @@ let len;
 
       case 'oct':
         octaToDecimal();
+        octaToBinary();
+        octaToHexa();
         octaDiv.value = userInput.value;
         break;
 

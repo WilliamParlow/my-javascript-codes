@@ -1,7 +1,7 @@
 
 
 // Tranform Decimal value to binary String
-function decimalToBinary(externalVal=undefined) {
+function decimalToBinary(externalVal = undefined) {
 
   function buildBinString(value) {
 
@@ -16,7 +16,7 @@ function decimalToBinary(externalVal=undefined) {
 
   }
 
-  let decimalValue = (externalVal) ? externalVal : Number(userInput.value);
+  let decimalValue = (externalVal) ? Number(externalVal) : Number(userInput.value);
 
   if (decimalValue == 0) {
     binaryDiv.value = 0;
@@ -42,19 +42,21 @@ function decimalToBinary(externalVal=undefined) {
 
 
 // Transform decimal value to Octal value
-function decimalToOctal(externalVal=undefined) {
+function decimalToOctal(externalVal = undefined) {
 
-  octalString = 0;
+  octalString = "";
 
-  function buildOctalString(index) {
+  function buildOctalString(value) {
 
-    if (index < 0) {
+    if (value < 8) {
+      octalString += value;
       return;
 
     } else {
-      let valIndice = len - index;
-      octalString += Number(decimalValue.charAt(valIndice) * Math.pow(8, index));
-      buildOctalString(index - 1);
+      let result = Math.trunc(Number(value) / 8);
+      let rest = Math.trunc(Number(value) % 8);
+      octalString += rest;
+      buildOctalString(result);
     }
 
   }
@@ -64,12 +66,12 @@ function decimalToOctal(externalVal=undefined) {
   if (decimalValue == 0) {
     octaDiv.value = 0;
     return;
-     
-  } else {
-    len = decimalValue.length - 1;
-    buildOctalString(len);
 
-    octaDiv.value = octalString;
+  } else {
+
+    buildOctalString(decimalValue);
+
+    octaDiv.value = octalString.split('').reverse().join('');
   }
 
 }
@@ -78,7 +80,7 @@ function decimalToOctal(externalVal=undefined) {
 
 
 // Transform decimal to Hexa value
-function decimalToHexa(externalVal=undefined) {
+function decimalToHexa(externalVal = undefined) {
 
   hexaString = '';
 
@@ -97,7 +99,7 @@ function decimalToHexa(externalVal=undefined) {
 
   }
 
-  let decimalValue = (externalVal) ? externalVal : Number(userInput.value);
+  let decimalValue = (externalVal) ? Number(externalVal) : Number(userInput.value);
 
   if (decimalValue <= 0) {
     hexaDiv.value = 0;

@@ -40,7 +40,7 @@ function binaryToDecimal() {
 }
 
 
-// Convert a binary number to decimal
+// Convert a binary number to Octal
 function binaryToOcta() {
 
   decimalString = binaryToDecimal();
@@ -49,7 +49,7 @@ function binaryToOcta() {
 }
 
 
-// Convert a binary number to decimal
+// Convert a binary number to Hexadecimal
 function binaryToHexa() {
 
   decimalString = binaryToDecimal();

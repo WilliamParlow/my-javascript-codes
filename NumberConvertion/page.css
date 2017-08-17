@@ -1,0 +1,101 @@
+/* Body defaults */
+body, html {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* General definitions */
+.page-footer,
+.page-header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  background-color: rgba(36, 110, 176, 0.71);
+  width: 100%;
+}
+
+select, input {
+  background: white;
+  border: none;
+  box-shadow: 0 0 4px #000;
+}
+
+
+/* Header definitions */
+.page-header {
+  padding: 2ch 0;
+}
+
+.blue {
+  color: rgba(36, 110, 176, 0.71);
+}
+
+.page-header h1,
+.page-header h3 {
+  text-shadow: 1px 1px #000;
+}
+
+h1 {
+  font-size: 200%;
+}
+
+h3 {
+  font-size: 130%;
+}
+
+/* Main container definitions */
+.main-container {
+  margin: 2ch 0;
+  padding: 0 2ch;
+  flex-grow: 1;
+}
+
+.main-section {
+  text-align: center;
+  padding: 2ch 0;
+}
+
+.result-field {
+  padding: 1ch;
+  border-bottom: solid 1px rgba(0, 0, 0, 0.1);
+}
+
+.user-field {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Footer definitions */
+.page-footer address {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  padding: 2ch 0;
+}
+
+
+/* Others */
+.fa-github {
+  color: rgba(0, 0, 0, 0.50); 
+  font-size: 150% !important;
+  transition: .4s ease-out;
+}
+
+.fa-github:hover {
+  color: rgba(0, 0, 0, 1); 
+  transition: .4s ease-out;
+}
+
+@media (max-width: 768px) {
+
+  .page-footer address {
+    flex-direction: column;
+  }
+
+}

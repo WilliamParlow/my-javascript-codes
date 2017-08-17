@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" type="text/css" href="./reset.css">
+  <link rel="stylesheet" type="text/css" href="./page.css">
+
+  <title>Conversion Activity</title>
+</head>
+
+<body>
+
+  <header class="page-header bgblue">
+    <h1>Conversion Activity</h1>
+    <h3>Binary, Hexadecimal, Octadecimal</h3>
+  </header>
+
+  <main class="main-container">
+
+    <section class="main-section">
+      <div class="result-field">
+        <h3>Binary</h3>
+        <input type="text" disabled id="binary" />
+      </div>
+
+      <div class="result-field">
+        <h3>Octaldecimal</h3>
+        <input type="text" disabled id="octa" />
+      </div>
+
+      <div class="result-field">
+        <h3>Hexadecimal</h3>
+        <input type="text" disabled id="hexa" />
+      </div>
+
+      <div class="result-field">
+        <h3>Decimal</h3>
+        <input type="text" disabled id="dec" />
+      </div>
+    </section>
+
+    <div class="user-field">
+
+      <input placeholder="Place your value here!" type="text" name="userInput" id="userInput" value="">
+
+      <br/>
+
+      <select id="changeBaseField">
+            <option value="dec" selected>Decimal</option>
+            <option value="oct" selected>Octaldecimal</option>
+            <option value="hex" selected>Hexadecimal</option>
+            <option value="bin" selected>Binary</option>
+      </select>
+    </div>
+
+  </main>
+
+  <footer class="page-footer">
+    <address>
+      <div>
+        Copyright @ All rights reserved
+      </div>
+      <div>
+        Author: Will Parlow N.
+      </div>
+      <div>
+        <a href="https://github.com/WilliamParlow" target="blank">
+          <i class="fa fa-github" aria-hidden="true"></i>
+        </a>
+      </div>
+    </address>
+  </footer>
+
+  <script src="./convercao.js"></script>
+  <script src="https://use.fontawesome.com/6f30f63528.js"></script>
+
+</body>
+
+</html>

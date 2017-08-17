@@ -21,6 +21,8 @@ select, input {
   background: white;
   border: none;
   box-shadow: 0 0 4px #000;
+  padding: .6ch 1ch;
+  border-radius: 3px;
 }
 
 

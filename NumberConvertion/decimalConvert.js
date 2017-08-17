@@ -1,14 +1,7 @@
-// Scope global vars
-let binaryString;
-let octalString;
-let hexaString;
 
-let len;
-
-let hexaVals = {"0": 0, "1": 1, "2": 2, "3": 3, "4": 4, "5": 5, "6": 6, "7": 7, "8": 8, "9": 9, "10": "A", "11": "B", "12": "C", "13": "D", "14": "E", "15": "F"}
 
 // Tranform Decimal value to binary String
-function decimalToBinary() {
+function decimalToBinary(externalVal=undefined) {
 
   function buildBinString(value) {
 
@@ -23,7 +16,7 @@ function decimalToBinary() {
 
   }
 
-  let decimalValue = Number(userInput.value);
+  let decimalValue = (externalVal) ? externalVal : Number(userInput.value);
 
   if (decimalValue == 0) {
     binaryDiv.value = 0;
@@ -49,7 +42,7 @@ function decimalToBinary() {
 
 
 // Transform decimal value to Octal value
-function decimalToOctal() {
+function decimalToOctal(externalVal=undefined) {
 
   octalString = 0;
 
@@ -59,14 +52,14 @@ function decimalToOctal() {
       return;
 
     } else {
-      let valIndice = Number(userInput.value.length-1) - index
+      let valIndice = len - index;
       octalString += Number(decimalValue.charAt(valIndice) * Math.pow(8, index));
       buildOctalString(index - 1);
     }
 
   }
 
-  let decimalValue = String(userInput.value);
+  let decimalValue = (externalVal) ? String(externalVal) : String(userInput.value);
 
   if (decimalValue == 0) {
     octaDiv.value = 0;
@@ -85,7 +78,7 @@ function decimalToOctal() {
 
 
 // Transform decimal to Hexa value
-function decimalToHexa() {
+function decimalToHexa(externalVal=undefined) {
 
   hexaString = '';
 
@@ -104,7 +97,7 @@ function decimalToHexa() {
 
   }
 
-  let decimalValue = Number(userInput.value);
+  let decimalValue = (externalVal) ? externalVal : Number(userInput.value);
 
   if (decimalValue <= 0) {
     hexaDiv.value = 0;

@@ -19,7 +19,7 @@ function decimalToBinary(externalVal = undefined) {
   let decimalValue = (externalVal) ? Number(externalVal) : Number(userInput.value);
 
   if (decimalValue == 0) {
-    binaryDiv.value = 0;
+    binaryDiv.value = '';
 
   } else {
     binaryString = "";
@@ -64,7 +64,7 @@ function decimalToOctal(externalVal = undefined) {
   let decimalValue = (externalVal) ? String(externalVal) : String(userInput.value);
 
   if (decimalValue == 0) {
-    octaDiv.value = 0;
+    octaDiv.value = '';
     return;
 
   } else {
@@ -102,7 +102,7 @@ function decimalToHexa(externalVal = undefined) {
   let decimalValue = (externalVal) ? Number(externalVal) : Number(userInput.value);
 
   if (decimalValue <= 0) {
-    hexaDiv.value = 0;
+    hexaDiv.value = '';
     return;
 
   } else {

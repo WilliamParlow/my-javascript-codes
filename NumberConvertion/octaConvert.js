@@ -19,7 +19,7 @@ function octaToDecimal() {
     let decimalValue = String(userInput.value);
   
     if (decimalValue == 0) {
-      octaDiv.value = 0;
+      decimalDiv.value = '';
       return;
        
     } else {
@@ -37,15 +37,15 @@ function octaToDecimal() {
 // Transform Octal value to Binary
 function octaToBinary() {
 
-  decimalString = octaToDecimal();
-  decimalToBinary(decimalString);
+  binaryString = octaToDecimal();
+  decimalToBinary(binaryString);
 
 }
 
 // Transform Octal value to Hexadecimal
 function octaToHexa() {
 
-  decimalString = octaToDecimal();
-  decimalToHexa(decimalString);
+  hexaString = octaToDecimal();
+  decimalToHexa(hexaString);
 
 }

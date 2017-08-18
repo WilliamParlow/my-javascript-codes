@@ -64,6 +64,9 @@ let len;
         break;
 
       case 'hex':
+        hexaToDecimal();
+        hexaToBinary();
+        hexaToOctal();
         hexaDiv.value = userInput.value;
         break;
 

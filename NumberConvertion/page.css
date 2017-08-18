@@ -18,11 +18,13 @@ body, html {
 }
 
 select, input {
-  background: white;
+  background: #FFF7E9;
   border: none;
   box-shadow: 0 0 4px #000;
   padding: .6ch 1ch;
   border-radius: 3px;
+  width: 50%;
+  font-size: 110%;
 }
 
 
@@ -98,6 +100,10 @@ h3 {
 
   .page-footer address {
     flex-direction: column;
+  }
+
+  select, input {
+    width: 100%;
   }
 
 }

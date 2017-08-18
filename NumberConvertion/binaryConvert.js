@@ -23,7 +23,7 @@ function binaryToDecimal() {
   let binaryVal = String(userInput.value).split('').reverse().join('');
 
   if (binaryVal == 0) {
-    decimalDiv.value = 0;
+    decimalDiv.value = ''
 
     return;
 
@@ -43,8 +43,8 @@ function binaryToDecimal() {
 // Convert a binary number to Octal
 function binaryToOcta() {
 
-  decimalString = binaryToDecimal();
-  decimalToOctal(decimalString);
+  octalString = binaryToDecimal();
+  decimalToOctal(octalString);
 
 }
 
@@ -52,8 +52,8 @@ function binaryToOcta() {
 // Convert a binary number to Hexadecimal
 function binaryToHexa() {
 
-  decimalString = binaryToDecimal();
-  decimalToHexa(decimalString);
+  hexaString = binaryToDecimal();
+  decimalToHexa(hexaString);
 
 }
 

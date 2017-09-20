@@ -25,22 +25,10 @@
 <body>
 
    <canvas id="canvas"></canvas>
-   <script>
-      document.getElementById('canvas').setAttribute("width", window.innerWidth);
-      document.getElementById('canvas').setAttribute("height", window.innerHeight);
-
-      window.onresize = function () {
-         document.getElementById('canvas').setAttribute("width", window.innerWidth);
-         document.getElementById('canvas').setAttribute("height", window.innerHeight);
-
-         endX = window.innerWidth - 100;
-         endY = window.innerHeight - 100;
-
-         appStart();
-      }
-   </script>
 
    <script src="./myGraphTest/config.js"></script>
+   <script src="./myGraphTest/events.js"></script>
+   <script src="./myGraphTest/functions.js"></script>
    <script src="./myGraphTest/myApp.js"></script>
 
 </body>

@@ -20,15 +20,32 @@
     ::-webkit-scrollbar {
       display: none;
    }
+
+   .canvas-container {
+     position: relative;
+   }
+
+   #canvas {
+     position: absolute;
+     z-index: -1;
+   }
+
+   #canvasHover {
+     position: relative;
+   }
 </style>
 
 <body>
 
-   <canvas id="canvas"></canvas>
-
+    <div class="canvas-container">
+        <canvas id="canvas"></canvas>
+        <canvas id="canvasHover"></canvas>
+    </div>
+  
    <script src="./myGraphTest/config.js"></script>
    <script src="./myGraphTest/events.js"></script>
    <script src="./myGraphTest/functions.js"></script>
+   <script src="./myGraphTest/graphMap.js"></script>
    <script src="./myGraphTest/myApp.js"></script>
 
 </body>

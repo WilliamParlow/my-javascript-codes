@@ -23,10 +23,11 @@ function drawGraph(chartConf) {
          let size = endX / totalValues;
          let height = endY;
 
-         drawHelpers();
-         drawBar(x, y, size, height);
-         drawStroke(x, y, size, height);
-         drawText(x, y, `${value.toLocaleString('pt-br')}`, size, "bold 12px Arial");
+         drawHelpers(mainContext);
+         drawBar(x, y, size, height, undefined, mainContext);
+         drawStroke(x, y, size, height, undefined, mainContext);
+         mapObject(x, y, size, height, value, mainContext);
+         drawText(x, y, `${value.toLocaleString('pt-br')}`, size, "bold 12px Arial", undefined, true, mainContext);
 
          x += size;
 

@@ -2,11 +2,15 @@
 var chartConfig;
 
 var canvas = document.querySelector('#canvas');
-var context = canvas.getContext('2d');
+var canvasHover = document.querySelector('#canvasHover');
+var mainContext = canvas.getContext('2d');
+var contextHover = canvasHover.getContext('2d');
 
 var totalValues = 0;
-var LIMIT_X = 100;
-var LIMIT_Y = 100;
+var graphBarMap = {};
+
+const LIMIT_X = 100;
+const LIMIT_Y = 100;
 
 var startX = LIMIT_X;
 var endX = window.innerWidth - LIMIT_X;

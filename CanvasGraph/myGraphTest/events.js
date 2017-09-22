@@ -5,7 +5,7 @@ canvasHover.setAttribute("height", window.innerHeight);
 
 
 
-window.onresize = ()  => {
+window.onresize = function() {
    canvas.setAttribute("width", window.innerWidth);
    canvas.setAttribute("height", window.innerHeight);
    canvasHover.setAttribute("width", window.innerWidth);
@@ -17,10 +17,10 @@ window.onresize = ()  => {
    appStart();
 }
 
-canvasHover.onmousemove = event => {
+canvasHover.onmousemove = function(event) {
 
    // every -> need to return a boolean value. False will break the loop
-   Object.keys(graphBarMap).every(bar => {
+   Object.keys(graphBarMap).every(function(bar) {
 
       if (isMousePositionBetweenBar(event, graphBarMap[bar])) {
 

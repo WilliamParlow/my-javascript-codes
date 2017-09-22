@@ -1,7 +1,7 @@
 function getHighVal(vals) {
 
    let highVals = [];
-
+   
    for (let i = 0; i < vals.length; i++) {
       highVals.push(Math.max(...vals[i]));
    }

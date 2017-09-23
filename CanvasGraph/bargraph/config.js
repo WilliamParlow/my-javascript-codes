@@ -42,7 +42,6 @@ function getValues(interval) {
    for (let i = 0; i < length; i++) {
       values.push(Number((Math.random() * 10000).toFixed(2)));
       values[i] = getSubValues(5);
-      totalValues++;
    }
 
    return values;

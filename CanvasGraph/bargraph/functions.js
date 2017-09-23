@@ -71,7 +71,7 @@ function drawHelpers(context) {
    context.beginPath();
    context.moveTo(startX, startY - limit);
    context.lineTo(startX, endY);
-   context.lineTo(endX + limit, endY);
+   context.lineTo(canvas.width * 0.99, endY);
    context.stroke();
 
 }

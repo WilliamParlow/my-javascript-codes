@@ -4,6 +4,8 @@ function appStart() {
       chartConfig = getConfig();
    }
 
+   graphBarMap = {};
+
    drawGraph(chartConfig);
 
 }
@@ -20,7 +22,7 @@ function drawGraph(chartConf) {
          let value = chartConf.values[i][j];
 
          let y = (endY - map(value, 0, highVal, startY, endY)) + LIMIT_Y;
-         let size = endX / totalValues;
+         let size = Math.round(endX / totalValues * 0.95);
          let height = endY;
 
          drawHelpers(mainContext);

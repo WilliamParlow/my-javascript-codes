@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Interacting with user</title>
+
+   <style>
+      html,
+      body {
+         margin: 0;
+         width: 100%;
+         height: 100%;
+      }
+
+      .container {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         width: 100%;
+      }
+
+      .pallet {
+         width: 600px;
+         background-color: burlywood;
+         display: flex;
+         align-items: center;
+      }
+
+      .pallet-item {
+         display: flex;
+         padding: 2px 4px;
+      }
+
+      .pallet-item:not(:last-child) {
+         border-right: 1px solid rgba(0, 0, 0, .2);
+      }
+
+      input {
+         border-radius: 50%;
+         width: 30px;
+         height: 30px;
+         padding: 10px;
+         text-align: center;
+         outline: none;
+         border: none;
+         background-color: #FFF;
+      }
+
+      .size-change {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         flex-direction: column;
+      }
+
+      .size-change>div {
+         height: 50%;
+         width: 2.5ch;
+         text-align: center;
+         margin: 2px;
+         cursor: pointer !important;
+         border-radius: 50%;
+      }
+
+      .size-change>div:nth-child(1) {
+         background-color: green;
+      }
+
+      .size-change>div:nth-child(2) {
+         background-color: crimson;
+      }
+   </style>
+
+</head>
+
+<body>
+
+   <div class="container">
+      <div class="pallet">
+         <div class="pallet-item">
+            <input id='color' type="color">
+         </div>
+         <div class="pallet-item">
+            <input id='size' value="10">
+            <div class="size-change">
+               <div id="plus">+</div>
+               <div id="minus">-</div>
+            </div>
+         </div>
+      </div>
+      <div>
+         <canvas width="600" height="400"></canvas>
+      </div>
+   </div>
+
+   <script>
+      let INCREMENT = 5;
+      let mouseState = false;
+      let canvas = document.querySelector('canvas');
+      let pencil = canvas.getContext('2d');
+
+      pencil.fillStyle = 'grey';
+      pencil.fillRect(0, 0, 600, 400);
+
+
+      function drawCircle(event) {
+
+         if (mouseState && event.buttons == 1) {
+
+            let x = event.clientX - canvas.offsetLeft;
+            let y = event.clientY - canvas.offsetTop;
+
+            let circleSize = document.querySelector('#size').value;
+            let circleColor = document.querySelector('#color').value;
+
+            pencil.fillStyle = circleColor;
+            pencil.beginPath();
+            pencil.arc(x, y, circleSize, 0, 2 * Math.PI);
+            pencil.fill();
+
+         }
+
+      }
+
+
+
+      function changeMouseState(event) {
+
+         if (event.type == 'mouseup') {
+            mouseState = false;
+         } else {
+            mouseState = true;
+         }
+
+      }
+
+
+
+      function circleSizeOperator() {
+
+         let sizeElement = document.querySelector('#size');
+         let size = parseInt(sizeElement.value)
+
+         sizeElement.value = eval(`${size} ${this.textContent} 1`);
+
+      }
+
+
+
+      canvas.onmouseup = changeMouseState;
+      canvas.onmousedown = changeMouseState;
+      canvas.onmousemove = drawCircle;
+
+      document.querySelector('#plus').onclick = circleSizeOperator;
+      document.querySelector('#minus').onclick = circleSizeOperator;
+   </script>
+
+</body>
+
+</html>

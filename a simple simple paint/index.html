@@ -29,6 +29,15 @@
          align-items: center;
       }
 
+      .pallet {
+         border: 5px solid;
+         border-bottom: none;
+      }
+
+      canvas {
+         border: 5px solid;
+      }
+
       .pallet-item {
          display: flex;
          padding: 2px 4px;
@@ -47,6 +56,55 @@
          outline: none;
          border: none;
          background-color: #FFF;
+      }
+
+      input[type=radio] {
+         width: 20px;
+         height: 20px;
+         position: relative;
+      }
+
+      input[type=radio]::before {
+         content: '';
+         z-index: 5;
+         background: #FFF;
+      }
+
+      input[type=radio]::before,
+      input[type=radio]:nth-child(1):checked::after,
+      input[type=radio]:nth-child(2):checked::after {
+         width: 100%;
+         height: 100%;
+         position: absolute;
+         top: 0;
+         left: 0;
+         border-radius: 50px;
+      }
+
+      input[type=radio]:nth-child(1)::after {
+         content: 'P';
+      }
+
+      input[type=radio]:nth-child(2)::after {
+         content: 'A';
+      }
+
+      input[type=radio]:nth-child(1)::after,
+      input[type=radio]:nth-child(2)::after {
+         z-index: 10;
+         transform: scale(0);
+         transition: .3s ease-in-out;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+      }
+
+      input[type=radio]:nth-child(1):checked::after,
+      input[type=radio]:nth-child(2):checked::after {
+         background-color: rgb(20, 138, 1);
+         transform: scale(1);
+         color: #FFF;
+         transition: .3s ease-in-out;
       }
 
       .size-change {
@@ -90,6 +148,15 @@
                <div id="minus">-</div>
             </div>
          </div>
+         <div class="pallet-item">
+            <div class="size-change">
+               <input type="radio" id="draw" name="draw" value="draw" checked>
+               <input type="radio" id="erase" name="draw" value="erase">
+            </div>
+         </div>
+         <div class="pallet-item">
+            <input id='bkcolor' type="color" value="#FFFFFF">
+         </div>
       </div>
       <div>
          <canvas width="600" height="400"></canvas>
@@ -97,14 +164,10 @@
    </div>
 
    <script>
-      let INCREMENT = 5;
       let mouseState = false;
       let canvas = document.querySelector('canvas');
       let pencil = canvas.getContext('2d');
-
-      pencil.fillStyle = 'grey';
-      pencil.fillRect(0, 0, 600, 400);
-
+      let eraseColor = '#FFFFFF';
 
       function drawCircle(event) {
 
@@ -115,8 +178,9 @@
 
             let circleSize = document.querySelector('#size').value;
             let circleColor = document.querySelector('#color').value;
+            let drawOption = document.querySelector('#draw');
 
-            pencil.fillStyle = circleColor;
+            pencil.fillStyle = (drawOption.checked) ? circleColor : eraseColor;
             pencil.beginPath();
             pencil.arc(x, y, circleSize, 0, 2 * Math.PI);
             pencil.fill();
@@ -150,12 +214,23 @@
 
 
 
+      function changeBackground() {
+
+         eraseColor = this.value;
+         pencil.fillStyle = eraseColor;
+         pencil.fillRect(0, 0, 600, 400);
+
+      }
+
+
+
       canvas.onmouseup = changeMouseState;
       canvas.onmousedown = changeMouseState;
       canvas.onmousemove = drawCircle;
 
       document.querySelector('#plus').onclick = circleSizeOperator;
       document.querySelector('#minus').onclick = circleSizeOperator;
+      document.querySelector('#bkcolor').onchange = changeBackground;
    </script>
 
 </body>

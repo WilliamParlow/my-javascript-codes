@@ -1,3 +1,7 @@
+/**
+ * 
+ * 
+ */
 function createMenuEvent() {
 
    removeWormMoveEvent();
@@ -33,12 +37,10 @@ function createMenuEvent() {
 }
 
 
-
+/**
+ * 
+ * 
+ */
 function removeMenuEvent() {
    gameWindow.onclick = null;
-}
-
-
-function clearWindow() {
-   game.clearRect(0, 0, gameWindow.width, gameWindow.height);
 }

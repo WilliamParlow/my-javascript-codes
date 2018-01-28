@@ -1,6 +1,13 @@
 let gameWindow = document.querySelector('#wormGame');
 let game = gameWindow.getContext('2d');
 
+let gameWormMoveInterval;
+
+let food = {
+   xPosition: 0,
+   yPosition: 0
+};
+
 /**
  * 
  */
@@ -8,6 +15,8 @@ let gameStatus = {
    playing: false,
    score: 0
 };
+
+
 
 /**
  * * * * * Worm status * * * * *
@@ -18,11 +27,12 @@ let gameStatus = {
  */
 let worm = {
    direction: 's',
-   velocity: 1,
-   xPosition: 0,
-   yPosition: 0,
-   isAlive: false
+   velocity: 100,
+   size: 10,
+   balls: [{}]
 };
+
+
 
 /**
  * Worm movements key codes - Explicit on keyCodes keys:values

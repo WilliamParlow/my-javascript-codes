@@ -7,9 +7,14 @@ window.onload = function () {
 
 };
 
+
+/**
+ * 
+ * 
+ */
 function startWormGame() {
 
-   setInterval(gameController, worm.velocity);
+   gameWormMoveInterval = setInterval(gameController, worm.velocity);
 
    document.onkeydown = function(e) {
 
@@ -28,7 +33,10 @@ function startWormGame() {
 }
 
 
-
+/**
+ * 
+ * 
+ */
 function removeWormMoveEvent() {
    document.onkeydown = null;
 }

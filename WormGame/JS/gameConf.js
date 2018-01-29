@@ -3,16 +3,18 @@ let game = gameWindow.getContext('2d');
 
 let gameWormMoveInterval;
 
+
+
 let food = {
    xPosition: 0,
-   yPosition: 0
+   yPosition: 0,
+   size: 10
 };
 
 /**
  * 
  */
 let gameStatus = {
-   playing: false,
    score: 0
 };
 

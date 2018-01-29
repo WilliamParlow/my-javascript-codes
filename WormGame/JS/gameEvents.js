@@ -7,8 +7,8 @@ window.onload = function () {
 
    Object.assign(containerSize, {
       'pixelsRemaining': {
-         width: parseFloat(String(containerSize.width).charAt(String(containerSize.width).length - 1)),
-         height: parseFloat(String(containerSize.height).charAt(String(containerSize.height).length - 1))
+         width: getBase10Positions(containerSize.width),
+         height: getBase10Positions(containerSize.height)
       }
    });
 
@@ -53,4 +53,21 @@ function startWormGame() {
  */
 function removeWormMoveEvent() {
    document.onkeydown = null;
+}
+
+
+
+/**
+ * 
+ * 
+ * @returns 
+ */
+function isWormFood() {
+
+   let x = worm.balls[0].xPosition;
+   let y = worm.balls[0].yPosition;
+   let wormSize = worm.size / 2;
+
+   return ((x >= food.xPosition && x <= food.xPosition + food.size) && (y >= food.yPosition && y <= food.yPosition + food.size))
+
 }

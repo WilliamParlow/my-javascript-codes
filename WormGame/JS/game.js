@@ -63,7 +63,7 @@ function gameOver() {
    clearInterval(gameWormMoveInterval);
    worm.direction = 's';
    worm.isAlive = false;
-   setTimeout(initGame, 10, (isWormSelfBumped()) ? 'You eat yourself, you\'re dead :(' : 'Worm is out of arena. You died :(');
+   setTimeout(initGame, 10, (isWormSelfBumped()) ? 'You eated yourself, you\'re dead :(' : 'Worm is out of arena. You died :(');
 
 }
 

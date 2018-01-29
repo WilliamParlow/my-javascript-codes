@@ -29,7 +29,7 @@ let gameStatus = {
  */
 let worm = {
    direction: 's',
-   velocity: 100,
+   velocity: 60,
    size: 10,
    balls: [{}],
    isAlive: true

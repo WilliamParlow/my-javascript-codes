@@ -28,6 +28,7 @@ function createMenuEvent() {
 
          removeMenuEvent();
          clearWindow();
+         worm.isAlive = true;
          startWormGame();
 
       }

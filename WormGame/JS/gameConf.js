@@ -29,7 +29,8 @@ let worm = {
    direction: 's',
    velocity: 100,
    size: 10,
-   balls: [{}]
+   balls: [{}],
+   isAlive: true
 };
 
 

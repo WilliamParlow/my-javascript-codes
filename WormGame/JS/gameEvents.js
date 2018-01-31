@@ -14,6 +14,7 @@ window.onload = function () {
 
    gameWindow.width = containerSize.width - 20 - containerSize.pixelsRemaining.width;
    gameWindow.height = containerSize.height - 20 - containerSize.pixelsRemaining.height;
+   gameWindow.height -= (gameWindow.height * 0.1);
 
    initGame();
 
@@ -28,7 +29,12 @@ window.onload = function () {
  */
 function startWormGame() {
 
+   worm.isAlive = true;
+   resetGameScores();
+   foodGenerator();
+
    gameWormMoveInterval = setInterval(gameController, worm.velocity);
+   gameTimeInterval = setInterval(timeController, 100);
 
    document.onkeydown = function (e) {
 
@@ -53,6 +59,58 @@ function startWormGame() {
  */
 function removeWormMoveEvent() {
    document.onkeydown = null;
+}
+
+
+
+
+/**
+ * 
+ * 
+ */
+function timeController() {
+
+   gameStatus.gameTime.microseconds++;
+
+   if (gameStatus.gameTime.microseconds >= 10) {
+
+      gameStatus.gameTime.seconds++;
+      gameStatus.gameTime.microseconds = 0;
+
+      if (gameStatus.gameTime.seconds >= 60) {
+
+         gameStatus.gameTime.minutes++;
+         gameStatus.gameTime.seconds = 0;
+
+      }
+
+   }
+
+   document.querySelector('#timer').textContent = getFormatedTime();
+
+}
+
+
+
+/**
+ * 
+ * 
+ * @returns 
+ */
+function getFormatedTime() {
+
+   function getTimeLessThen10Formated(value) {
+      return (parseFloat(value) <= 9) ? `0${value}` : value;
+   }
+
+   let hours = getTimeLessThen10Formated(gameStatus.gameTime.minutes);
+   let minutes = getTimeLessThen10Formated(gameStatus.gameTime.seconds);
+   let seconds = getTimeLessThen10Formated(gameStatus.gameTime.microseconds);
+
+   let time = `${hours}:${minutes}:${seconds}`;
+
+   return time;
+
 }
 
 

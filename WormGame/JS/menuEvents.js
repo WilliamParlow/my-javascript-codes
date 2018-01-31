@@ -16,12 +16,12 @@ function createMenuEvent(text) {
    game.lineWidth = 5;
    game.strokeRect(x, y, width, height);
 
-   game.font =  `${width / 8}px Arial`;
+   game.font = `${width / 8}px Arial`;
    game.fillText("Start Game!", x + width / 6, y + height / 1.6 - (x / 6));
 
    if (text && text !== '') {
 
-      game.font =  `${width / 9}px Arial`;
+      game.font = `${width / 9}px Arial`;
       game.fillText(text, width / 5, height - (x / 5));
       game.fillText(`Score: ${gameStatus.score}`, x + width / 5, (y + height) * 2 / 1.6 - (x / 6));
 
@@ -36,9 +36,6 @@ function createMenuEvent(text) {
 
          removeMenuEvent();
          clearWindow();
-         worm.isAlive = true;
-         gameStatus.score = 0;
-         foodGenerator();
          startWormGame();
 
       }
@@ -48,10 +45,28 @@ function createMenuEvent(text) {
 }
 
 
+
 /**
  * 
  * 
  */
 function removeMenuEvent() {
    gameWindow.onclick = null;
+}
+
+
+
+/**
+ * 
+ * 
+ */
+function resetGameScores() {
+
+   gameStatus.score = 0;
+   gameStatus.gameTime.microseconds = 0;
+   gameStatus.gameTime.seconds = 0;
+   gameStatus.gameTime.minutes = 0;
+
+   resetScoreBoard();
+
 }

@@ -14,6 +14,7 @@ function gameController() {
 
    if (isWormFood()) {
       gameStatus.score += 100;
+      document.querySelector('#score').textContent = gameStatus.score;
       pushWormBall();
       foodGenerator();
    }
@@ -61,6 +62,7 @@ function initGame(text='') {
 function gameOver() {
 
    clearInterval(gameWormMoveInterval);
+   clearInterval(gameTimeInterval);
    worm.direction = 's';
    worm.isAlive = false;
    setTimeout(initGame, 10, (isWormSelfBumped()) ? 'You eated yourself, you\'re dead :(' : 'Worm is out of arena. You died :(');
@@ -121,5 +123,13 @@ function pushWormBall() {
       xPosition: x,
       yPosition: y
    });
+
+}
+
+
+function resetScoreBoard() {
+
+   document.querySelector('#score').textContent = gameStatus.score;
+   document.querySelector('#timer').textContent = '00:00:00';
 
 }

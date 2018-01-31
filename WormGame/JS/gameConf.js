@@ -2,8 +2,7 @@ let gameWindow = document.querySelector('#wormGame');
 let game = gameWindow.getContext('2d');
 
 let gameWormMoveInterval;
-
-
+let gameTimeInterval;
 
 let food = {
    xPosition: 0,
@@ -15,7 +14,12 @@ let food = {
  * 
  */
 let gameStatus = {
-   score: 0
+   score: 0,
+   gameTime: {
+      microseconds: 0,
+      seconds: 0,
+      minutes: 0
+   }
 };
 
 

@@ -14,10 +14,16 @@ function gameController() {
 
    if (isWormFood()) {
       gameStatus.score += 100;
-      document.querySelector('#score').textContent = gameStatus.score;
       pushWormBall();
       foodGenerator();
    }
+
+   game.beginPath();
+   game.fillStyle = food.color;
+   game.arc(food.xPosition, food.yPosition, food.size, 0, 2 * Math.PI);
+   game.fill();
+
+   game.fillStyle = worm.color;
 
    worm.balls.forEach(function (ball) {
       game.beginPath();
@@ -25,9 +31,8 @@ function gameController() {
       game.fill();
    });
 
-   game.beginPath();
-   game.arc(food.xPosition, food.yPosition, food.size, 0, 2 * Math.PI);
-   game.fill();
+   game.fillStyle = '#000';
+   drawScoreboard();
 
 }
 
@@ -36,7 +41,7 @@ function gameController() {
  * 
  * 
  */
-function initGame(text='') {
+function initGame(text = '') {
 
    worm.balls = [];
 
@@ -86,11 +91,70 @@ function clearWindow() {
  */
 function foodGenerator() {
 
-   let x = Math.round(Math.random() * gameWindow.width);
-   let y = Math.round(Math.random() * gameWindow.height);
+   food.color = '#C00';   
 
-   food.xPosition = x - getBase10Positions(x)
-   food.yPosition = y - getBase10Positions(y)
+   do {
+
+      let x = Math.round(Math.random() * gameWindow.width);
+      let y = Math.round(Math.random() * gameWindow.height);
+
+      food.xPosition = x - getBase10Positions(x);
+      food.yPosition = y - getBase10Positions(y);
+
+      food.xPosition = getMinimumMaximumPosition(food.xPosition, 20, gameWindow.height - 10);
+      food.yPosition = getMinimumMaximumPosition(food.yPosition, 20, gameWindow.width - 10);
+
+   } while (isFoodInsideWorm());
+
+}
+
+
+/**
+ * 
+ * 
+ * @returns 
+ */
+function isFoodInsideWorm() {
+
+   let isInsideWorm = false;
+   let x = food.xPosition;
+   let y = food.yPosition;
+
+   for (let i = 0; i < worm.balls.length; i++) {
+
+      let wx = worm.balls[i].xPosition;
+      let wy = worm.balls[i].yPosition;
+
+      if ((x >= wx && x + food.size <= wx + worm.size) && ((y >= wy && y + food.size <= wy + worm.size))) {
+         isInsideWorm = true;
+         break;
+      }
+
+   }
+
+   return isInsideWorm;
+
+}
+
+
+
+/**
+ * 
+ * 
+ * @param {any} position 
+ * @param {any} min 
+ * @param {any} max 
+ * @returns 
+ */
+function getMinimumMaximumPosition(position, min, max) {
+
+   if (position < min) {
+      return min;
+   } else if (position > max) {
+      return max;
+   }
+
+   return position;
 
 }
 
@@ -127,9 +191,29 @@ function pushWormBall() {
 }
 
 
-function resetScoreBoard() {
 
-   document.querySelector('#score').textContent = gameStatus.score;
-   document.querySelector('#timer').textContent = '00:00:00';
+/**
+ * 
+ * 
+ */
+function drawScoreboard() {
+   
+   let width = 20;
+
+   game.font = `${width}px Arial`;
+   game.fillText(`Timer: ${getFormatedTime()}`, 0, width);
+   game.fillText(`Score: ${gameStatus.score}`, 0, width+ width);
+
+}
+
+
+
+/**
+ * 
+ * 
+ */
+function getRandomRBG() {
+
+   return `rgb(${Math.round(Math.random()) * 255}, ${Math.round(Math.random()) * 255}, ${Math.round(Math.random()) * 255})`;
 
 }

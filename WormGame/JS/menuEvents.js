@@ -22,8 +22,8 @@ function createMenuEvent(text) {
    if (text && text !== '') {
 
       game.font = `${width / 9}px Arial`;
-      game.fillText(text, width / 5, height - (x / 5));
-      game.fillText(`Score: ${gameStatus.score}`, x + width / 5, (y + height) * 2 / 1.6 - (x / 6));
+      game.fillText(text, width / 5, height - (height / 2));
+      game.fillText(`Score: ${gameStatus.score}`, x + width / 5, (y + height) * 2 / 1.6);
 
    }
 
@@ -66,7 +66,5 @@ function resetGameScores() {
    gameStatus.gameTime.microseconds = 0;
    gameStatus.gameTime.seconds = 0;
    gameStatus.gameTime.minutes = 0;
-
-   resetScoreBoard();
 
 }

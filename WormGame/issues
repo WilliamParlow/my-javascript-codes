@@ -1,10 +1,10 @@
 ######################### BUG ISSUES #########################
 
 ------------------------ V1.0 ------------------------
-  1. Worm food spawning on top of worm: Need to spawn outside of worm;
-  2. Change food spawning parameters. Food is spawning in half when it spawn on the sides of arena;
+  1. OK- Worm food spawning on top of worm: Need to spawn outside of worm;
+  2. OK - Change food spawning parameters. Food is spawning in half when it spawn on the sides of arena;
   3. Create an adaptative worm, that adapts your velocity, sizes and others according user devices;
   4. Create an menu option or auto device checking to active a mobile controller (like "touch keystrokes")
-  5. Create an adaptative design, that the user can change worm color and estructure, and collorfull foods
+  5. OK - Game more colorfull
   
   That's All in this moment :D

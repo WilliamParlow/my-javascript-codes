@@ -14,7 +14,6 @@ window.onload = function () {
 
    gameWindow.width = containerSize.width - 20 - containerSize.pixelsRemaining.width;
    gameWindow.height = containerSize.height - 20 - containerSize.pixelsRemaining.height;
-   gameWindow.height -= (gameWindow.height * 0.1);
 
    initGame();
 
@@ -30,6 +29,7 @@ window.onload = function () {
 function startWormGame() {
 
    worm.isAlive = true;
+   worm.color = '#000';
    resetGameScores();
    foodGenerator();
 
@@ -86,8 +86,6 @@ function timeController() {
 
    }
 
-   document.querySelector('#timer').textContent = getFormatedTime();
-
 }
 
 
@@ -124,8 +122,7 @@ function isWormFood() {
 
    let x = worm.balls[0].xPosition;
    let y = worm.balls[0].yPosition;
-   let wormSize = worm.size / 2;
 
-   return ((x >= food.xPosition && x <= food.xPosition + food.size) && (y >= food.yPosition && y <= food.yPosition + food.size))
+   return ((x >= food.xPosition && x + worm.size <= food.xPosition + food.size) && (y >= food.yPosition && y + worm.size <= food.yPosition + food.size));
 
 }

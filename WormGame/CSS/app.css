@@ -17,38 +17,3 @@ div.container {
 canvas {
    border: 5px solid;
 }
-
-.scoreboard {
-   position: absolute;
-   display: flex;
-   justify-content: space-between;
-   color: #FFF;
-   background-color: #000;
-   width: calc(100% - 10px);
-   height: calc(10% - 10px);
-}
-
-.scoreboard > div {
-   display: flex;
-   height: 100%;
-   width: 50%;
-   font-size: 3ch;
-   align-items: center;
-   padding: 0 5px 0 5px;
-}
-
-@media all and (max-width: 768px) {
-   
-   .scoreboard > div {
-      font-size: 2ch;
-   }
-   
-}
-
-@media all and (max-width: 468px) {
-   
-   .scoreboard > div {
-      font-size: 1.6ch;
-   }
-   
-}

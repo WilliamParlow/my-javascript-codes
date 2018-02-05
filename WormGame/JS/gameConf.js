@@ -7,7 +7,8 @@ let gameTimeInterval;
 let food = {
    xPosition: 0,
    yPosition: 0,
-   size: 10
+   size: 10,
+   color: '#000'
 };
 
 /**
@@ -36,7 +37,8 @@ let worm = {
    velocity: 60,
    size: 10,
    balls: [{}],
-   isAlive: true
+   isAlive: true,
+   color: '#000'
 };
 
 

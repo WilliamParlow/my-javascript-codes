@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <link rel="stylesheet" href="css/style.css">
+   <title>Dinamic Search</title>
+</head>
+<body>
+   
+   <main class="container">
+
+      <table id="productsList">
+         <caption>
+            <input type="text" name="search" id="search" placeholder="Find what you whant!">
+         </caption>
+         <div>
+            <select name="findBy" id="findBy">
+               <option value="0" selected>Nome</option>
+               <option value="1">Categoria</option>
+               <option value="2">Tag</option>
+            </select>
+         </div>
+         <thead>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>Categoria</th>
+            <th>Tag</th>
+         </thead>
+         <tbody id="productsListBody"></tbody>
+      </table>
+
+   </main>
+
+   <script src="js/search.js"></script>
+   <script src="js/events.js"></script>
+
+</body>
+</html>

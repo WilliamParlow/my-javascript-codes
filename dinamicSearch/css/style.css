@@ -1,0 +1,37 @@
+* {
+   font-family: Arial, Helvetica, sans-serif;
+   box-sizing: border-box;
+}
+
+main.container {
+   width: 100%;
+}
+
+#productsList input#search {
+   width: 100% !important;
+   padding: 1ch;
+}
+
+#productsList {
+   width: 100%;
+}
+
+#productsList thead th {
+   text-align: left;
+}
+
+td span {
+   font-weight: bold;
+}
+
+td span:nth-child(2n) {
+   color: #900;
+}
+
+td span:nth-child(2n+1) {
+   color: #090;
+}
+
+.hide {
+   display: none !important;
+}

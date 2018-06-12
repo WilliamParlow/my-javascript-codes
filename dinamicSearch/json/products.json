@@ -1,0 +1,2019 @@
+[{
+   "id": 0,
+   "nome": "Chocoleite",
+   "categoria": "Massas",
+   "tags": [{
+      "cor": "amarelo",
+      "tipo": "voo"
+   }, {
+      "cor": "amarelo",
+      "tipo": "Prazer"
+   }, {
+      "cor": "vermelho",
+      "tipo": "Bebe"
+   }, {
+      "cor": "verde",
+      "tipo": "Bebe"
+   }, {
+      "cor": "marrom",
+      "tipo": "Eletrodomestico"
+   }, {
+      "cor": "beje",
+      "tipo": "Bebe"
+   }, {
+      "cor": "verde",
+      "tipo": "voo"
+   }, {
+      "cor": "banco",
+      "tipo": "Conforto"
+   }]
+}, {
+   "id": 1,
+   "nome": "Coca Cola",
+   "categoria": "Carnes",
+   "tags": [{
+      "cor": "bordo",
+      "tipo": "Bebe"
+   }, {
+      "cor": "amarelo",
+      "tipo": "Prazer"
+   }, {
+      "cor": "vermelho",
+      "tipo": "Lubrificador"
+   }, {
+      "cor": "verde",
+      "tipo": "voo"
+   }, {
+      "cor": "preto",
+      "tipo": "Bebe"
+   }, {
+      "cor": "amarelo",
+      "tipo": "Bebe"
+   }]
+}, {
+   "id": 2,
+   "nome": "Chocoleite",
+   "categoria": "Cosmeticos",
+   "tags": [{
+      "cor": "banco",
+      "tipo": "voo"
+   }, {
+      "cor": "preto",
+      "tipo": "Eletrodomestico"
+   }, {
+      "cor": "marrom",
+      "tipo": "Eletrodomestico"
+   }]
+}, {
+   "id": 3,
+   "nome": "Chocoleite",
+   "categoria": "Beleza",
+   "tags": [{
+      "cor": "preto",
+      "tipo": "Conforto"
+   }, {
+      "cor": "beje",
+      "tipo": "Massageador"
+   }, {
+      "cor": "preto",
+      "tipo": "Conforto"
+   }, {
+      "cor": "preto",
+      "tipo": "voo"
+   }, {
+      "cor": "vermelho",
+      "tipo": "Lubrificador"
+   }, {
+      "cor": "marrom",
+      "tipo": "passeio"
+   }]
+}, {
+   "id": 4,
+   "nome": "undefined",
+   "categoria": "Cosmeticos",
+   "tags": [{
+      "cor": "preto",
+      "tipo": "Prazer"
+   }, {
+      "cor": "beje",
+      "tipo": "passeio"
+   }, {
+      "cor": "amarelo",
+      "tipo": "Lubrificador"
+   }, {
+      "cor": "amarelo",
+      "tipo": "Lubrificador"
+   }, {
+      "cor": "marrom",
+      "tipo": "Conforto"
+   }]
+}, {
+   "id": 5,
+   "nome": "Nescau",
+   "categoria": "Cosmeticos",
+   "tags": [{
+      "cor": "banco",
+      "tipo": "Limpeza"
+   }, {
+      "cor": "bordo",
+      "tipo": "Lubrificador"
+   }, {
+      "cor": "azul",
+      "tipo": "Conforto"
+   }, {
+      "cor": "beje",
+      "tipo": "Lubrificador"
+   }, {
+      "cor": "verde",
+      "tipo": "voo"
+   }, {
+      "cor": "marrom",
+      "tipo": "Conforto"
+   }, {
+      "cor": "azul",
+      "tipo": "Conforto"
+   }]
+}, {
+   "id": 6,
+   "nome": "Coca Cola",
+   "categoria": "Beleza",
+   "tags": [{
+      "cor": "beje",
+      "tipo": "passeio"
+   }, {
+      "cor": "banco",
+      "tipo": "Massageador"
+   }, {
+      "cor": "preto",
+      "tipo": "Conforto"
+   }, {
+      "cor": "beje",
+      "tipo": "Prazer"
+   }, {
+      "cor": "preto",
+      "tipo": "Massageador"
+   }, {
+      "cor": "amarelo",
+      "tipo": "Massageador"
+   }, {
+      "cor": "beje",
+      "tipo": "Massageador"
+   }, {
+      "cor": "banco",
+      "tipo": "Eletrodomestico"
+   }]
+}, {
+   "id": 7,
+   "nome": "Colgate",
+   "categoria": "Cosmeticos",
+   "tags": [{
+      "cor": "bordo",
+      "tipo": "Bebe"
+   }, {
+      "cor": "amarelo",
+      "tipo": "Massageador"
+   }, {
+      "cor": "bordo",
+      "tipo": "Massageador"
+   }]
+}, {
+   "id": 8,
+   "nome": "Nissin",
+   "categoria": "Cosmeticos",
+   "tags": [{
+      "cor": "preto",
+      "tipo": "Bebe"
+   }, {
+      "cor": "banco",
+      "tipo": "voo"
+   }, {
+      "cor": "beje",
+      "tipo": "Conforto"
+   }]
+}, {
+   "id": 9,
+   "nome": "Nissin",
+   "categoria": "Verduras",
+   "tags": [{
+      "cor": "vermelho",
+      "tipo": "Massageador"
+   }, {
+      "cor": "marrom",
+      "tipo": "Bebe"
+   }, {
+      "cor": "beje",
+      "tipo": "Conforto"
+   }, {
+      "cor": "vermelho",
+      "tipo": "voo"
+   }, {
+      "cor": "bordo",
+      "tipo": "Lubrificador"
+   }, {
+      "cor": "beje",
+      "tipo": "Bebe"
+   }, {
+      "cor": "amarelo",
+      "tipo": "voo"
+   }]
+}, {
+   "id": 10,
+   "nome": "Chocoleite",
+   "categoria": "Carnes",
+   "tags": [{
+      "cor": "azul",
+      "tipo": "Massageador"
+   }, {
+      "cor": "marrom",
+      "tipo": "Bebe"
+   }, {
+      "cor": "verde",
+      "tipo": "Massageador"
+   }, {
+      "cor": "verde",
+      "tipo": "Bebe"
+   }, {
+      "cor": "preto",
+      "tipo": "Lubrificador"
+   }]
+}, {
+   "id": 11,
+   "nome": "Fanta",
+   "categoria": "Guloseimas",
+   "tags": [{
+      "cor": "beje",
+      "tipo": "passeio"
+   }, {
+      "cor": "marrom",
+      "tipo": "Eletrodomestico"
+   }, {
+      "cor": "verde",
+      "tipo": "Conforto"
+   }, {
+      "cor": "vermelho",
+      "tipo": "Prazer"
+   }, {
+      "cor": "banco",
+      "tipo": "Bebe"
+   }, {
+      "cor": "verde",
+      "tipo": "voo"
+   }, {
+      "cor": "verde",
+      "tipo": "Massageador"
+   }]
+}, {
+   "id": 12,
+   "nome": "Mussum Ipsum",
+   "categoria": "Verduras",
+   "tags": [{
+      "cor": "marrom",
+      "tipo": "Limpeza"
+   }, {
+      "cor": "bordo",
+      "tipo": "Limpeza"
+   }, {
+      "cor": "vermelho",
+      "tipo": "Prazer"
+   }]
+}, {
+   "id": 13,
+   "nome": "Fanta",
+   "categoria": "Massas",
+   "tags": [{
+      "cor": "verde",
+      "tipo": "Conforto"
+   }, {
+      "cor": "vermelho",
+      "tipo": "Eletrodomestico"
+   }, {
+      "cor": "amarelo",
+      "tipo": "Lubrificador"
+   }, {
+      "cor": "bordo",
+      "tipo": "Lubrificador"
+   }, {
+      "cor": "beje",
+      "tipo": "Prazer"
+   }]
+}, {
+   "id": 14,
+   "nome": "Fanta",
+   "categoria": "Beleza",
+   "tags": [{
+      "cor": "verde",
+      "tipo": "Bebe"
+   }, {
+      "cor": "bordo",
+      "tipo": "Eletrodomestico"
+   }, {
+      "cor": "verde",
+      "tipo": "voo"
+   }, {
+      "cor": "amarelo",
+      "tipo": "Prazer"
+   }]
+}, {
+   "id": 15,
+   "nome": "Fanta",
+   "categoria": "Carnes",
+   "tags": [{
+      "cor": "marrom",
+      "tipo": "Prazer"
+   }, {
+      "cor": "azul",
+      "tipo": "Limpeza"
+   }, {
+      "cor": "beje",
+      "tipo": "Lubrificador"
+   }, {
+      "cor": "bordo",
+      "tipo": "Lubrificador"
+   }, {
+      "cor": "verde",
+      "tipo": "Lubrificador"
+   }]
+}, {
+   "id": 16,
+   "nome": "Pepsi",
+   "categoria": "Bebidas",
+   "tags": [{
+      "cor": "banco",
+      "tipo": "Prazer"
+   }, {
+      "cor": "beje",
+      "tipo": "Conforto"
+   }, {
+      "cor": "beje",
+      "tipo": "Massageador"
+   }, {
+      "cor": "beje",
+      "tipo": "Eletrodomestico"
+   }, {
+      "cor": "beje",
+      "tipo": "Conforto"
+   }, {
+      "cor": "bordo",
+      "tipo": "Prazer"
+   }, {
+      "cor": "marrom",
+      "tipo": "Bebe"
+   }, {
+      "cor": "banco",
+      "tipo": "Limpeza"
+   }, {
+      "cor": "azul",
+      "tipo": "Limpeza"
+   }]
+}, {
+   "id": 17,
+   "nome": "Colgate",
+   "categoria": "Frios",
+   "tags": [{
+      "cor": "amarelo",
+      "tipo": "Massageador"
+   }, {
+      "cor": "verde",
+      "tipo": "Limpeza"
+   }, {
+      "cor": "beje",
+      "tipo": "Lubrificador"
+   }, {
+      "cor": "bordo",
+      "tipo": "Eletrodomestico"
+   }, {
+      "cor": "preto",
+      "tipo": "Prazer"
+   }, {
+      "cor": "verde",
+      "tipo": "passeio"
+   }, {
+      "cor": "azul",
+      "tipo": "Bebe"
+   }, {
+      "cor": "banco",
+      "tipo": "Prazer"
+   }, {
+      "cor": "bordo",
+      "tipo": "Conforto"
+   }]
+}, {
+   "id": 18,
+   "nome": "Coca Cola",
+   "categoria": "Frutas",
+   "tags": [{
+      "cor": "preto",
+      "tipo": "voo"
+   }, {
+      "cor": "amarelo",
+      "tipo": "passeio"
+   }, {
+      "cor": "verde",
+      "tipo": "voo"
+   }, {
+      "cor": "marrom",
+      "tipo": "passeio"
+   }, {
+      "cor": "beje",
+      "tipo": "voo"
+   }, {
+      "cor": "amarelo",
+      "tipo": "voo"
+   }, {
+      "cor": "vermelho",
+      "tipo": "Bebe"
+   }]
+}, {
+   "id": 19,
+   "nome": "Mussum Ipsum",
+   "categoria": "Beleza",
+   "tags": [{
+      "cor": "preto",
+      "tipo": "Massageador"
+   }, {
+      "cor": "azul",
+      "tipo": "Prazer"
+   }, {
+      "cor": "azul",
+      "tipo": "passeio"
+   }, {
+      "cor": "banco",
+      "tipo": "Prazer"
+   }, {
+      "cor": "marrom",
+      "tipo": "Limpeza"
+   }]
+}, {
+   "id": 20,
+   "nome": "Pepsi",
+   "categoria": "Frios",
+   "tags": [{
+      "cor": "vermelho",
+      "tipo": "Conforto"
+   }]
+}, {
+   "id": 21,
+   "nome": "Nescau",
+   "categoria": "Beleza",
+   "tags": [{
+      "cor": "azul",
+      "tipo": "Bebe"
+   }, {
+      "cor": "marrom",
+      "tipo": "Conforto"
+   }]
+}, {
+   "id": 22,
+   "nome": "Chocoleite",
+   "categoria": "Beleza",
+   "tags": [{
+      "cor": "amarelo",
+      "tipo": "passeio"
+   }, {
+      "cor": "preto",
+      "tipo": "voo"
+   }, {
+      "cor": "preto",
+      "tipo": "Eletrodomestico"
+   }, {
+      "cor": "marrom",
+      "tipo": "voo"
+   }, {
+      "cor": "bordo",
+      "tipo": "Massageador"
+   }, {
+      "cor": "marrom",
+      "tipo": "Prazer"
+   }, {
+      "cor": "beje",
+      "tipo": "Bebe"
+   }, {
+      "cor": "beje",
+      "tipo": "Massageador"
+   }, {
+      "cor": "bordo",
+      "tipo": "Massageador"
+   }]
+}, {
+   "id": 23,
+   "nome": "Fanta",
+   "categoria": "Frios",
+   "tags": [{
+      "cor": "bordo",
+      "tipo": "voo"
+   }, {
+      "cor": "amarelo",
+      "tipo": "Prazer"
+   }, {
+      "cor": "azul",
+      "tipo": "Conforto"
+   }, {
+      "cor": "marrom",
+      "tipo": "Eletrodomestico"
+   }, {
+      "cor": "marrom",
+      "tipo": "Prazer"
+   }, {
+      "cor": "vermelho",
+      "tipo": "Limpeza"
+   }]
+}, {
+   "id": 24,
+   "nome": "Chocoleite",
+   "categoria": "Massas",
+   "tags": [{
+      "cor": "verde",
+      "tipo": "Conforto"
+   }, {
+      "cor": "azul",
+      "tipo": "voo"
+   }, {
+      "cor": "marrom",
+      "tipo": "Massageador"
+   }, {
+      "cor": "vermelho",
+      "tipo": "Lubrificador"
+   }, {
+      "cor": "amarelo",
+      "tipo": "passeio"
+   }, {
+      "cor": "amarelo",
+      "tipo": "voo"
+   }, {
+      "cor": "preto",
+      "tipo": "passeio"
+   }]
+}, {
+   "id": 25,
+   "nome": "Colgate",
+   "categoria": "Carnes",
+   "tags": [{
+      "cor": "azul",
+      "tipo": "Lubrificador"
+   }, {
+      "cor": "marrom",
+      "tipo": "Limpeza"
+   }, {
+      "cor": "azul",
+      "tipo": "Lubrificador"
+   }, {
+      "cor": "marrom",
+      "tipo": "Conforto"
+   }, {
+      "cor": "azul",
+      "tipo": "passeio"
+   }, {
+      "cor": "verde",
+      "tipo": "Massageador"
+   }, {
+      "cor": "azul",
+      "tipo": "Lubrificador"
+   }, {
+      "cor": "banco",
+      "tipo": "Lubrificador"
+   }, {
+      "cor": "azul",
+      "tipo": "Limpeza"
+   }]
+}, {
+   "id": 26,
+   "nome": "Nescau",
+   "categoria": "Beleza",
+   "tags": [{
+      "cor": "preto",
+      "tipo": "Conforto"
+   }, {
+      "cor": "beje",
+      "tipo": "Massageador"
+   }, {
+      "cor": "amarelo",
+      "tipo": "Conforto"
+   }, {
+      "cor": "banco",
+      "tipo": "voo"
+   }, {
+      "cor": "azul",
+      "tipo": "Conforto"
+   }, {
+      "cor": "preto",
+      "tipo": "passeio"
+   }, {
+      "cor": "bordo",
+      "tipo": "Eletrodomestico"
+   }, {
+      "cor": "azul",
+      "tipo": "voo"
+   }, {
+      "cor": "preto",
+      "tipo": "Limpeza"
+   }]
+}, {
+   "id": 27,
+   "nome": "Nissin",
+   "categoria": "Verduras",
+   "tags": [{
+      "cor": "azul",
+      "tipo": "passeio"
+   }, {
+      "cor": "banco",
+      "tipo": "Lubrificador"
+   }, {
+      "cor": "bordo",
+      "tipo": "Conforto"
+   }, {
+      "cor": "verde",
+      "tipo": "Prazer"
+   }, {
+      "cor": "azul",
+      "tipo": "Conforto"
+   }, {
+      "cor": "verde",
+      "tipo": "Lubrificador"
+   }, {
+      "cor": "azul",
+      "tipo": "Massageador"
+   }, {
+      "cor": "amarelo",
+      "tipo": "Prazer"
+   }]
+}, {
+   "id": 28,
+   "nome": "Nissin",
+   "categoria": "Frios",
+   "tags": [{
+      "cor": "amarelo",
+      "tipo": "voo"
+   }, {
+      "cor": "marrom",
+      "tipo": "passeio"
+   }, {
+      "cor": "preto",
+      "tipo": "passeio"
+   }, {
+      "cor": "preto",
+      "tipo": "passeio"
+   }, {
+      "cor": "verde",
+      "tipo": "Massageador"
+   }, {
+      "cor": "beje",
+      "tipo": "Conforto"
+   }]
+}, {
+   "id": 29,
+   "nome": "Chocoleite",
+   "categoria": "Massas",
+   "tags": [{
+      "cor": "verde",
+      "tipo": "passeio"
+   }, {
+      "cor": "amarelo",
+      "tipo": "Conforto"
+   }, {
+      "cor": "vermelho",
+      "tipo": "Bebe"
+   }]
+}, {
+   "id": 30,
+   "nome": "Mussum Ipsum",
+   "categoria": "Guloseimas",
+   "tags": [{
+      "cor": "azul",
+      "tipo": "Eletrodomestico"
+   }, {
+      "cor": "banco",
+      "tipo": "voo"
+   }, {
+      "cor": "marrom",
+      "tipo": "voo"
+   }, {
+      "cor": "verde",
+      "tipo": "Lubrificador"
+   }, {
+      "cor": "beje",
+      "tipo": "passeio"
+   }, {
+      "cor": "vermelho",
+      "tipo": "Conforto"
+   }, {
+      "cor": "azul",
+      "tipo": "Massageador"
+   }, {
+      "cor": "banco",
+      "tipo": "Eletrodomestico"
+   }]
+}, {
+   "id": 31,
+   "nome": "Chocoleite",
+   "categoria": "Verduras",
+   "tags": [{
+      "cor": "vermelho",
+      "tipo": "Limpeza"
+   }]
+}, {
+   "id": 32,
+   "nome": "undefined",
+   "categoria": "Cosmeticos",
+   "tags": [{
+      "cor": "marrom",
+      "tipo": "Lubrificador"
+   }, {
+      "cor": "banco",
+      "tipo": "Eletrodomestico"
+   }, {
+      "cor": "bordo",
+      "tipo": "Lubrificador"
+   }, {
+      "cor": "preto",
+      "tipo": "Limpeza"
+   }, {
+      "cor": "vermelho",
+      "tipo": "voo"
+   }, {
+      "cor": "marrom",
+      "tipo": "Conforto"
+   }, {
+      "cor": "bordo",
+      "tipo": "voo"
+   }, {
+      "cor": "azul",
+      "tipo": "voo"
+   }, {
+      "cor": "beje",
+      "tipo": "passeio"
+   }]
+}, {
+   "id": 33,
+   "nome": "Chocoleite",
+   "categoria": "Bebidas",
+   "tags": [{
+      "cor": "amarelo",
+      "tipo": "Limpeza"
+   }, {
+      "cor": "preto",
+      "tipo": "Limpeza"
+   }, {
+      "cor": "marrom",
+      "tipo": "Limpeza"
+   }]
+}, {
+   "id": 34,
+   "nome": "Colgate",
+   "categoria": "Cosmeticos",
+   "tags": [{
+      "cor": "bordo",
+      "tipo": "Massageador"
+   }]
+}, {
+   "id": 35,
+   "nome": "Chocoleite",
+   "categoria": "Cosmeticos",
+   "tags": [{
+      "cor": "vermelho",
+      "tipo": "Bebe"
+   }, {
+      "cor": "preto",
+      "tipo": "voo"
+   }, {
+      "cor": "banco",
+      "tipo": "Lubrificador"
+   }, {
+      "cor": "beje",
+      "tipo": "Prazer"
+   }, {
+      "cor": "verde",
+      "tipo": "Eletrodomestico"
+   }]
+}, {
+   "id": 36,
+   "nome": "Colgate",
+   "categoria": "Verduras",
+   "tags": [{
+      "cor": "beje",
+      "tipo": "Massageador"
+   }, {
+      "cor": "amarelo",
+      "tipo": "Massageador"
+   }, {
+      "cor": "azul",
+      "tipo": "Bebe"
+   }, {
+      "cor": "preto",
+      "tipo": "passeio"
+   }, {
+      "cor": "bordo",
+      "tipo": "Bebe"
+   }, {
+      "cor": "verde",
+      "tipo": "voo"
+   }, {
+      "cor": "vermelho",
+      "tipo": "voo"
+   }, {
+      "cor": "bordo",
+      "tipo": "voo"
+   }, {
+      "cor": "bordo",
+      "tipo": "voo"
+   }]
+}, {
+   "id": 37,
+   "nome": "Nescau",
+   "categoria": "Massas",
+   "tags": [{
+      "cor": "banco",
+      "tipo": "Massageador"
+   }, {
+      "cor": "beje",
+      "tipo": "Massageador"
+   }]
+}, {
+   "id": 38,
+   "nome": "Colgate",
+   "categoria": "Verduras",
+   "tags": [{
+      "cor": "preto",
+      "tipo": "Conforto"
+   }, {
+      "cor": "azul",
+      "tipo": "Conforto"
+   }, {
+      "cor": "preto",
+      "tipo": "Eletrodomestico"
+   }, {
+      "cor": "beje",
+      "tipo": "Bebe"
+   }]
+}, {
+   "id": 39,
+   "nome": "Nissin",
+   "categoria": "Massas",
+   "tags": [{
+      "cor": "bordo",
+      "tipo": "Lubrificador"
+   }, {
+      "cor": "azul",
+      "tipo": "Massageador"
+   }, {
+      "cor": "beje",
+      "tipo": "passeio"
+   }, {
+      "cor": "amarelo",
+      "tipo": "Massageador"
+   }]
+}, {
+   "id": 40,
+   "nome": "Nissin",
+   "categoria": "Massas",
+   "tags": [{
+      "cor": "banco",
+      "tipo": "voo"
+   }, {
+      "cor": "beje",
+      "tipo": "Eletrodomestico"
+   }, {
+      "cor": "banco",
+      "tipo": "Bebe"
+   }]
+}, {
+   "id": 41,
+   "nome": "Pepsi",
+   "categoria": "Cosmeticos",
+   "tags": [{
+      "cor": "marrom",
+      "tipo": "Lubrificador"
+   }, {
+      "cor": "marrom",
+      "tipo": "Eletrodomestico"
+   }, {
+      "cor": "banco",
+      "tipo": "Bebe"
+   }, {
+      "cor": "beje",
+      "tipo": "Eletrodomestico"
+   }, {
+      "cor": "marrom",
+      "tipo": "Limpeza"
+   }, {
+      "cor": "verde",
+      "tipo": "Eletrodomestico"
+   }, {
+      "cor": "azul",
+      "tipo": "Conforto"
+   }, {
+      "cor": "bordo",
+      "tipo": "Limpeza"
+   }, {
+      "cor": "azul",
+      "tipo": "Massageador"
+   }]
+}, {
+   "id": 42,
+   "nome": "undefined",
+   "categoria": "Cosmeticos",
+   "tags": [{
+      "cor": "bordo",
+      "tipo": "Lubrificador"
+   }]
+}, {
+   "id": 43,
+   "nome": "Mussum Ipsum",
+   "categoria": "Verduras",
+   "tags": [{
+      "cor": "beje",
+      "tipo": "Massageador"
+   }, {
+      "cor": "beje",
+      "tipo": "Lubrificador"
+   }, {
+      "cor": "preto",
+      "tipo": "Conforto"
+   }, {
+      "cor": "preto",
+      "tipo": "passeio"
+   }, {
+      "cor": "marrom",
+      "tipo": "Massageador"
+   }, {
+      "cor": "vermelho",
+      "tipo": "voo"
+   }]
+}, {
+   "id": 44,
+   "nome": "Chocoleite",
+   "categoria": "Frutas",
+   "tags": [{
+      "cor": "amarelo",
+      "tipo": "passeio"
+   }, {
+      "cor": "banco",
+      "tipo": "Limpeza"
+   }]
+}, {
+   "id": 45,
+   "nome": "Colgate",
+   "categoria": "Frios",
+   "tags": [{
+      "cor": "preto",
+      "tipo": "Prazer"
+   }, {
+      "cor": "verde",
+      "tipo": "passeio"
+   }, {
+      "cor": "banco",
+      "tipo": "Limpeza"
+   }]
+}, {
+   "id": 46,
+   "nome": "Pepsi",
+   "categoria": "Verduras",
+   "tags": [{
+      "cor": "banco",
+      "tipo": "Massageador"
+   }, {
+      "cor": "bordo",
+      "tipo": "Limpeza"
+   }, {
+      "cor": "banco",
+      "tipo": "Massageador"
+   }, {
+      "cor": "banco",
+      "tipo": "Massageador"
+   }, {
+      "cor": "amarelo",
+      "tipo": "Prazer"
+   }, {
+      "cor": "amarelo",
+      "tipo": "passeio"
+   }, {
+      "cor": "bordo",
+      "tipo": "Limpeza"
+   }, {
+      "cor": "marrom",
+      "tipo": "Massageador"
+   }]
+}, {
+   "id": 47,
+   "nome": "Chocoleite",
+   "categoria": "Cosmeticos",
+   "tags": [{
+      "cor": "banco",
+      "tipo": "Massageador"
+   }, {
+      "cor": "verde",
+      "tipo": "Massageador"
+   }, {
+      "cor": "beje",
+      "tipo": "Bebe"
+   }, {
+      "cor": "banco",
+      "tipo": "Bebe"
+   }, {
+      "cor": "banco",
+      "tipo": "passeio"
+   }, {
+      "cor": "marrom",
+      "tipo": "Prazer"
+   }, {
+      "cor": "verde",
+      "tipo": "voo"
+   }]
+}, {
+   "id": 48,
+   "nome": "Nissin",
+   "categoria": "Guloseimas",
+   "tags": [{
+      "cor": "preto",
+      "tipo": "Bebe"
+   }, {
+      "cor": "azul",
+      "tipo": "Prazer"
+   }, {
+      "cor": "beje",
+      "tipo": "Eletrodomestico"
+   }, {
+      "cor": "marrom",
+      "tipo": "Massageador"
+   }, {
+      "cor": "bordo",
+      "tipo": "Bebe"
+   }, {
+      "cor": "preto",
+      "tipo": "Prazer"
+   }, {
+      "cor": "preto",
+      "tipo": "passeio"
+   }]
+}, {
+   "id": 49,
+   "nome": "Coca Cola",
+   "categoria": "Carnes",
+   "tags": [{
+      "cor": "azul",
+      "tipo": "Prazer"
+   }, {
+      "cor": "beje",
+      "tipo": "voo"
+   }, {
+      "cor": "vermelho",
+      "tipo": "Prazer"
+   }, {
+      "cor": "bordo",
+      "tipo": "Conforto"
+   }, {
+      "cor": "beje",
+      "tipo": "Limpeza"
+   }]
+}, {
+   "id": 50,
+   "nome": "Nescau",
+   "categoria": "Beleza",
+   "tags": [{
+      "cor": "beje",
+      "tipo": "Eletrodomestico"
+   }, {
+      "cor": "beje",
+      "tipo": "Massageador"
+   }, {
+      "cor": "beje",
+      "tipo": "Eletrodomestico"
+   }, {
+      "cor": "marrom",
+      "tipo": "Prazer"
+   }, {
+      "cor": "beje",
+      "tipo": "voo"
+   }, {
+      "cor": "vermelho",
+      "tipo": "Prazer"
+   }]
+}, {
+   "id": 51,
+   "nome": "Mussum Ipsum",
+   "categoria": "Massas",
+   "tags": [{
+      "cor": "marrom",
+      "tipo": "Bebe"
+   }, {
+      "cor": "amarelo",
+      "tipo": "Massageador"
+   }, {
+      "cor": "vermelho",
+      "tipo": "Bebe"
+   }, {
+      "cor": "marrom",
+      "tipo": "Lubrificador"
+   }, {
+      "cor": "bordo",
+      "tipo": "Prazer"
+   }]
+}, {
+   "id": 52,
+   "nome": "undefined",
+   "categoria": "Carnes",
+   "tags": [{
+      "cor": "amarelo",
+      "tipo": "Conforto"
+   }, {
+      "cor": "beje",
+      "tipo": "Prazer"
+   }, {
+      "cor": "vermelho",
+      "tipo": "Conforto"
+   }]
+}, {
+   "id": 53,
+   "nome": "undefined",
+   "categoria": "Frutas",
+   "tags": [{
+      "cor": "beje",
+      "tipo": "Conforto"
+   }, {
+      "cor": "amarelo",
+      "tipo": "Massageador"
+   }]
+}, {
+   "id": 54,
+   "nome": "Nescau",
+   "categoria": "Cosmeticos",
+   "tags": [{
+      "cor": "banco",
+      "tipo": "passeio"
+   }, {
+      "cor": "vermelho",
+      "tipo": "Prazer"
+   }, {
+      "cor": "marrom",
+      "tipo": "passeio"
+   }, {
+      "cor": "bordo",
+      "tipo": "Conforto"
+   }, {
+      "cor": "bordo",
+      "tipo": "passeio"
+   }, {
+      "cor": "amarelo",
+      "tipo": "Lubrificador"
+   }, {
+      "cor": "preto",
+      "tipo": "passeio"
+   }]
+}, {
+   "id": 55,
+   "nome": "Chocoleite",
+   "categoria": "Bebidas",
+   "tags": [{
+      "cor": "azul",
+      "tipo": "Limpeza"
+   }, {
+      "cor": "preto",
+      "tipo": "Prazer"
+   }, {
+      "cor": "banco",
+      "tipo": "passeio"
+   }, {
+      "cor": "amarelo",
+      "tipo": "Massageador"
+   }, {
+      "cor": "verde",
+      "tipo": "Conforto"
+   }, {
+      "cor": "preto",
+      "tipo": "passeio"
+   }, {
+      "cor": "verde",
+      "tipo": "voo"
+   }, {
+      "cor": "bordo",
+      "tipo": "Bebe"
+   }]
+}, {
+   "id": 56,
+   "nome": "Mussum Ipsum",
+   "categoria": "Verduras",
+   "tags": [{
+      "cor": "bordo",
+      "tipo": "Eletrodomestico"
+   }, {
+      "cor": "bordo",
+      "tipo": "Lubrificador"
+   }, {
+      "cor": "azul",
+      "tipo": "Conforto"
+   }, {
+      "cor": "preto",
+      "tipo": "Limpeza"
+   }, {
+      "cor": "verde",
+      "tipo": "Massageador"
+   }, {
+      "cor": "marrom",
+      "tipo": "Bebe"
+   }]
+}, {
+   "id": 57,
+   "nome": "Fanta",
+   "categoria": "Verduras",
+   "tags": [{
+      "cor": "amarelo",
+      "tipo": "Limpeza"
+   }, {
+      "cor": "preto",
+      "tipo": "Massageador"
+   }, {
+      "cor": "beje",
+      "tipo": "Lubrificador"
+   }, {
+      "cor": "bordo",
+      "tipo": "voo"
+   }, {
+      "cor": "banco",
+      "tipo": "Massageador"
+   }, {
+      "cor": "verde",
+      "tipo": "Bebe"
+   }, {
+      "cor": "verde",
+      "tipo": "Bebe"
+   }]
+}, {
+   "id": 58,
+   "nome": "Mussum Ipsum",
+   "categoria": "Massas",
+   "tags": [{
+      "cor": "amarelo",
+      "tipo": "Massageador"
+   }, {
+      "cor": "marrom",
+      "tipo": "Lubrificador"
+   }, {
+      "cor": "preto",
+      "tipo": "Lubrificador"
+   }, {
+      "cor": "bordo",
+      "tipo": "Bebe"
+   }, {
+      "cor": "marrom",
+      "tipo": "passeio"
+   }, {
+      "cor": "vermelho",
+      "tipo": "Eletrodomestico"
+   }, {
+      "cor": "bordo",
+      "tipo": "Limpeza"
+   }]
+}, {
+   "id": 59,
+   "nome": "Coca Cola",
+   "categoria": "Guloseimas",
+   "tags": [{
+      "cor": "preto",
+      "tipo": "Prazer"
+   }, {
+      "cor": "marrom",
+      "tipo": "Lubrificador"
+   }, {
+      "cor": "marrom",
+      "tipo": "passeio"
+   }, {
+      "cor": "beje",
+      "tipo": "Limpeza"
+   }]
+}, {
+   "id": 60,
+   "nome": "Colgate",
+   "categoria": "Carnes",
+   "tags": [{
+      "cor": "amarelo",
+      "tipo": "Massageador"
+   }, {
+      "cor": "bordo",
+      "tipo": "Massageador"
+   }, {
+      "cor": "marrom",
+      "tipo": "Prazer"
+   }, {
+      "cor": "vermelho",
+      "tipo": "Prazer"
+   }]
+}, {
+   "id": 61,
+   "nome": "Chocoleite",
+   "categoria": "Beleza",
+   "tags": [{
+      "cor": "amarelo",
+      "tipo": "Eletrodomestico"
+   }, {
+      "cor": "amarelo",
+      "tipo": "Lubrificador"
+   }]
+}, {
+   "id": 62,
+   "nome": "Colgate",
+   "categoria": "Beleza",
+   "tags": [{
+      "cor": "beje",
+      "tipo": "Bebe"
+   }, {
+      "cor": "vermelho",
+      "tipo": "Limpeza"
+   }, {
+      "cor": "vermelho",
+      "tipo": "Limpeza"
+   }]
+}, {
+   "id": 63,
+   "nome": "Colgate",
+   "categoria": "Massas",
+   "tags": [{
+      "cor": "azul",
+      "tipo": "Massageador"
+   }]
+}, {
+   "id": 64,
+   "nome": "Pepsi",
+   "categoria": "Frutas",
+   "tags": [{
+      "cor": "banco",
+      "tipo": "voo"
+   }]
+}, {
+   "id": 65,
+   "nome": "Coca Cola",
+   "categoria": "Beleza",
+   "tags": [{
+      "cor": "amarelo",
+      "tipo": "Massageador"
+   }, {
+      "cor": "bordo",
+      "tipo": "passeio"
+   }, {
+      "cor": "vermelho",
+      "tipo": "Eletrodomestico"
+   }, {
+      "cor": "verde",
+      "tipo": "Bebe"
+   }, {
+      "cor": "bordo",
+      "tipo": "Massageador"
+   }, {
+      "cor": "preto",
+      "tipo": "Prazer"
+   }]
+}, {
+   "id": 66,
+   "nome": "undefined",
+   "categoria": "Verduras",
+   "tags": [{
+      "cor": "azul",
+      "tipo": "Lubrificador"
+   }, {
+      "cor": "marrom",
+      "tipo": "Eletrodomestico"
+   }, {
+      "cor": "banco",
+      "tipo": "Lubrificador"
+   }]
+}, {
+   "id": 67,
+   "nome": "Coca Cola",
+   "categoria": "Guloseimas",
+   "tags": [{
+      "cor": "preto",
+      "tipo": "Conforto"
+   }]
+}, {
+   "id": 68,
+   "nome": "Colgate",
+   "categoria": "Beleza",
+   "tags": [{
+      "cor": "marrom",
+      "tipo": "Limpeza"
+   }, {
+      "cor": "bordo",
+      "tipo": "Bebe"
+   }]
+}, {
+   "id": 69,
+   "nome": "Nescau",
+   "categoria": "Bebidas",
+   "tags": [{
+      "cor": "azul",
+      "tipo": "Eletrodomestico"
+   }, {
+      "cor": "marrom",
+      "tipo": "Eletrodomestico"
+   }, {
+      "cor": "amarelo",
+      "tipo": "Limpeza"
+   }]
+}, {
+   "id": 70,
+   "nome": "Nissin",
+   "categoria": "Guloseimas",
+   "tags": [{
+      "cor": "vermelho",
+      "tipo": "voo"
+   }, {
+      "cor": "amarelo",
+      "tipo": "Massageador"
+   }, {
+      "cor": "amarelo",
+      "tipo": "Limpeza"
+   }, {
+      "cor": "marrom",
+      "tipo": "Massageador"
+   }, {
+      "cor": "bordo",
+      "tipo": "Prazer"
+   }, {
+      "cor": "bordo",
+      "tipo": "Prazer"
+   }, {
+      "cor": "preto",
+      "tipo": "Massageador"
+   }, {
+      "cor": "amarelo",
+      "tipo": "Massageador"
+   }]
+}, {
+   "id": 71,
+   "nome": "Chocoleite",
+   "categoria": "Cosmeticos",
+   "tags": [{
+      "cor": "bordo",
+      "tipo": "voo"
+   }]
+}, {
+   "id": 72,
+   "nome": "Colgate",
+   "categoria": "Cosmeticos",
+   "tags": [{
+      "cor": "banco",
+      "tipo": "Massageador"
+   }, {
+      "cor": "bordo",
+      "tipo": "Massageador"
+   }, {
+      "cor": "amarelo",
+      "tipo": "Lubrificador"
+   }, {
+      "cor": "azul",
+      "tipo": "Prazer"
+   }, {
+      "cor": "beje",
+      "tipo": "Eletrodomestico"
+   }, {
+      "cor": "preto",
+      "tipo": "Bebe"
+   }, {
+      "cor": "vermelho",
+      "tipo": "Conforto"
+   }, {
+      "cor": "beje",
+      "tipo": "Massageador"
+   }]
+}, {
+   "id": 73,
+   "nome": "Mussum Ipsum",
+   "categoria": "Massas",
+   "tags": [{
+      "cor": "beje",
+      "tipo": "Conforto"
+   }, {
+      "cor": "bordo",
+      "tipo": "Conforto"
+   }, {
+      "cor": "verde",
+      "tipo": "Limpeza"
+   }, {
+      "cor": "banco",
+      "tipo": "Lubrificador"
+   }, {
+      "cor": "beje",
+      "tipo": "Lubrificador"
+   }, {
+      "cor": "azul",
+      "tipo": "Bebe"
+   }, {
+      "cor": "amarelo",
+      "tipo": "Conforto"
+   }, {
+      "cor": "amarelo",
+      "tipo": "Massageador"
+   }]
+}, {
+   "id": 74,
+   "nome": "Chocoleite",
+   "categoria": "Carnes",
+   "tags": [{
+      "cor": "preto",
+      "tipo": "Conforto"
+   }, {
+      "cor": "marrom",
+      "tipo": "Bebe"
+   }]
+}, {
+   "id": 75,
+   "nome": "Nescau",
+   "categoria": "Beleza",
+   "tags": [{
+      "cor": "marrom",
+      "tipo": "passeio"
+   }, {
+      "cor": "banco",
+      "tipo": "Lubrificador"
+   }, {
+      "cor": "banco",
+      "tipo": "Lubrificador"
+   }, {
+      "cor": "preto",
+      "tipo": "Eletrodomestico"
+   }, {
+      "cor": "banco",
+      "tipo": "Limpeza"
+   }, {
+      "cor": "bordo",
+      "tipo": "Lubrificador"
+   }, {
+      "cor": "azul",
+      "tipo": "Bebe"
+   }]
+}, {
+   "id": 76,
+   "nome": "Pepsi",
+   "categoria": "Frios",
+   "tags": [{
+      "cor": "marrom",
+      "tipo": "Lubrificador"
+   }]
+}, {
+   "id": 77,
+   "nome": "Nescau",
+   "categoria": "Guloseimas",
+   "tags": [{
+      "cor": "azul",
+      "tipo": "Conforto"
+   }, {
+      "cor": "verde",
+      "tipo": "passeio"
+   }, {
+      "cor": "azul",
+      "tipo": "Bebe"
+   }]
+}, {
+   "id": 78,
+   "nome": "Mussum Ipsum",
+   "categoria": "Guloseimas",
+   "tags": [{
+      "cor": "marrom",
+      "tipo": "Conforto"
+   }, {
+      "cor": "amarelo",
+      "tipo": "Massageador"
+   }, {
+      "cor": "bordo",
+      "tipo": "voo"
+   }, {
+      "cor": "vermelho",
+      "tipo": "Bebe"
+   }, {
+      "cor": "marrom",
+      "tipo": "Prazer"
+   }, {
+      "cor": "azul",
+      "tipo": "Bebe"
+   }, {
+      "cor": "beje",
+      "tipo": "Limpeza"
+   }]
+}, {
+   "id": 79,
+   "nome": "Nissin",
+   "categoria": "Cosmeticos",
+   "tags": [{
+      "cor": "amarelo",
+      "tipo": "Conforto"
+   }]
+}, {
+   "id": 80,
+   "nome": "Chocoleite",
+   "categoria": "Verduras",
+   "tags": [{
+      "cor": "bordo",
+      "tipo": "Prazer"
+   }, {
+      "cor": "azul",
+      "tipo": "Bebe"
+   }, {
+      "cor": "azul",
+      "tipo": "Massageador"
+   }]
+}, {
+   "id": 81,
+   "nome": "Nissin",
+   "categoria": "Frutas",
+   "tags": [{
+      "cor": "amarelo",
+      "tipo": "voo"
+   }, {
+      "cor": "marrom",
+      "tipo": "Massageador"
+   }, {
+      "cor": "bordo",
+      "tipo": "Bebe"
+   }, {
+      "cor": "verde",
+      "tipo": "Massageador"
+   }, {
+      "cor": "verde",
+      "tipo": "Eletrodomestico"
+   }, {
+      "cor": "azul",
+      "tipo": "Conforto"
+   }, {
+      "cor": "verde",
+      "tipo": "Bebe"
+   }]
+}, {
+   "id": 82,
+   "nome": "undefined",
+   "categoria": "Cosmeticos",
+   "tags": [{
+      "cor": "azul",
+      "tipo": "Conforto"
+   }, {
+      "cor": "verde",
+      "tipo": "voo"
+   }]
+}, {
+   "id": 83,
+   "nome": "Chocoleite",
+   "categoria": "Frios",
+   "tags": [{
+      "cor": "preto",
+      "tipo": "passeio"
+   }, {
+      "cor": "marrom",
+      "tipo": "Conforto"
+   }, {
+      "cor": "amarelo",
+      "tipo": "Massageador"
+   }]
+}, {
+   "id": 84,
+   "nome": "Colgate",
+   "categoria": "Massas",
+   "tags": [{
+      "cor": "verde",
+      "tipo": "voo"
+   }, {
+      "cor": "amarelo",
+      "tipo": "passeio"
+   }, {
+      "cor": "bordo",
+      "tipo": "Massageador"
+   }]
+}, {
+   "id": 85,
+   "nome": "Chocoleite",
+   "categoria": "Beleza",
+   "tags": [{
+      "cor": "amarelo",
+      "tipo": "passeio"
+   }, {
+      "cor": "azul",
+      "tipo": "Conforto"
+   }, {
+      "cor": "azul",
+      "tipo": "Massageador"
+   }, {
+      "cor": "beje",
+      "tipo": "Eletrodomestico"
+   }, {
+      "cor": "beje",
+      "tipo": "passeio"
+   }, {
+      "cor": "marrom",
+      "tipo": "passeio"
+   }, {
+      "cor": "verde",
+      "tipo": "Prazer"
+   }, {
+      "cor": "verde",
+      "tipo": "Bebe"
+   }]
+}, {
+   "id": 86,
+   "nome": "Mussum Ipsum",
+   "categoria": "Guloseimas",
+   "tags": [{
+      "cor": "amarelo",
+      "tipo": "Prazer"
+   }, {
+      "cor": "preto",
+      "tipo": "Lubrificador"
+   }, {
+      "cor": "preto",
+      "tipo": "Limpeza"
+   }, {
+      "cor": "preto",
+      "tipo": "Limpeza"
+   }, {
+      "cor": "vermelho",
+      "tipo": "passeio"
+   }, {
+      "cor": "azul",
+      "tipo": "passeio"
+   }, {
+      "cor": "marrom",
+      "tipo": "Prazer"
+   }, {
+      "cor": "amarelo",
+      "tipo": "Massageador"
+   }, {
+      "cor": "verde",
+      "tipo": "Massageador"
+   }]
+}, {
+   "id": 87,
+   "nome": "Mussum Ipsum",
+   "categoria": "Beleza",
+   "tags": [{
+      "cor": "amarelo",
+      "tipo": "Eletrodomestico"
+   }, {
+      "cor": "beje",
+      "tipo": "Lubrificador"
+   }]
+}, {
+   "id": 88,
+   "nome": "Nescau",
+   "categoria": "Frutas",
+   "tags": [{
+      "cor": "marrom",
+      "tipo": "Limpeza"
+   }, {
+      "cor": "beje",
+      "tipo": "voo"
+   }, {
+      "cor": "amarelo",
+      "tipo": "passeio"
+   }, {
+      "cor": "banco",
+      "tipo": "Conforto"
+   }, {
+      "cor": "preto",
+      "tipo": "Prazer"
+   }, {
+      "cor": "vermelho",
+      "tipo": "Massageador"
+   }, {
+      "cor": "verde",
+      "tipo": "Eletrodomestico"
+   }, {
+      "cor": "amarelo",
+      "tipo": "voo"
+   }, {
+      "cor": "preto",
+      "tipo": "Bebe"
+   }]
+}, {
+   "id": 89,
+   "nome": "Pepsi",
+   "categoria": "Frutas",
+   "tags": [{
+      "cor": "banco",
+      "tipo": "passeio"
+   }]
+}, {
+   "id": 90,
+   "nome": "Mussum Ipsum",
+   "categoria": "Beleza",
+   "tags": [{
+      "cor": "vermelho",
+      "tipo": "Conforto"
+   }, {
+      "cor": "amarelo",
+      "tipo": "Massageador"
+   }, {
+      "cor": "beje",
+      "tipo": "voo"
+   }, {
+      "cor": "verde",
+      "tipo": "Lubrificador"
+   }, {
+      "cor": "marrom",
+      "tipo": "Conforto"
+   }, {
+      "cor": "beje",
+      "tipo": "Prazer"
+   }]
+}, {
+   "id": 91,
+   "nome": "Fanta",
+   "categoria": "Frios",
+   "tags": [{
+      "cor": "beje",
+      "tipo": "voo"
+   }, {
+      "cor": "banco",
+      "tipo": "Massageador"
+   }, {
+      "cor": "bordo",
+      "tipo": "passeio"
+   }, {
+      "cor": "banco",
+      "tipo": "Prazer"
+   }, {
+      "cor": "preto",
+      "tipo": "Bebe"
+   }, {
+      "cor": "beje",
+      "tipo": "Bebe"
+   }]
+}, {
+   "id": 92,
+   "nome": "Mussum Ipsum",
+   "categoria": "Guloseimas",
+   "tags": [{
+      "cor": "amarelo",
+      "tipo": "Bebe"
+   }, {
+      "cor": "vermelho",
+      "tipo": "Massageador"
+   }, {
+      "cor": "bordo",
+      "tipo": "Massageador"
+   }, {
+      "cor": "banco",
+      "tipo": "voo"
+   }, {
+      "cor": "banco",
+      "tipo": "Prazer"
+   }, {
+      "cor": "amarelo",
+      "tipo": "voo"
+   }, {
+      "cor": "banco",
+      "tipo": "Bebe"
+   }, {
+      "cor": "beje",
+      "tipo": "Massageador"
+   }]
+}, {
+   "id": 93,
+   "nome": "Colgate",
+   "categoria": "Beleza",
+   "tags": [{
+      "cor": "azul",
+      "tipo": "Conforto"
+   }, {
+      "cor": "azul",
+      "tipo": "Conforto"
+   }, {
+      "cor": "bordo",
+      "tipo": "Prazer"
+   }, {
+      "cor": "verde",
+      "tipo": "Massageador"
+   }]
+}, {
+   "id": 94,
+   "nome": "undefined",
+   "categoria": "Guloseimas",
+   "tags": [{
+      "cor": "verde",
+      "tipo": "Massageador"
+   }, {
+      "cor": "preto",
+      "tipo": "Prazer"
+   }]
+}, {
+   "id": 95,
+   "nome": "undefined",
+   "categoria": "Carnes",
+   "tags": [{
+      "cor": "bordo",
+      "tipo": "Bebe"
+   }, {
+      "cor": "vermelho",
+      "tipo": "Lubrificador"
+   }, {
+      "cor": "bordo",
+      "tipo": "Conforto"
+   }, {
+      "cor": "marrom",
+      "tipo": "Prazer"
+   }, {
+      "cor": "verde",
+      "tipo": "Massageador"
+   }, {
+      "cor": "azul",
+      "tipo": "Lubrificador"
+   }, {
+      "cor": "amarelo",
+      "tipo": "Conforto"
+   }, {
+      "cor": "verde",
+      "tipo": "Conforto"
+   }, {
+      "cor": "bordo",
+      "tipo": "Bebe"
+   }]
+}, {
+   "id": 96,
+   "nome": "Mussum Ipsum",
+   "categoria": "Bebidas",
+   "tags": [{
+      "cor": "bordo",
+      "tipo": "Limpeza"
+   }, {
+      "cor": "banco",
+      "tipo": "Eletrodomestico"
+   }, {
+      "cor": "banco",
+      "tipo": "Conforto"
+   }, {
+      "cor": "marrom",
+      "tipo": "Limpeza"
+   }, {
+      "cor": "verde",
+      "tipo": "Bebe"
+   }, {
+      "cor": "azul",
+      "tipo": "voo"
+   }, {
+      "cor": "preto",
+      "tipo": "Limpeza"
+   }, {
+      "cor": "banco",
+      "tipo": "Bebe"
+   }]
+}, {
+   "id": 97,
+   "nome": "Pepsi",
+   "categoria": "Bebidas",
+   "tags": [{
+      "cor": "marrom",
+      "tipo": "Bebe"
+   }, {
+      "cor": "beje",
+      "tipo": "Lubrificador"
+   }, {
+      "cor": "banco",
+      "tipo": "Limpeza"
+   }, {
+      "cor": "bordo",
+      "tipo": "Lubrificador"
+   }, {
+      "cor": "preto",
+      "tipo": "Eletrodomestico"
+   }, {
+      "cor": "verde",
+      "tipo": "Massageador"
+   }, {
+      "cor": "marrom",
+      "tipo": "Conforto"
+   }]
+}, {
+   "id": 98,
+   "nome": "Fanta",
+   "categoria": "Verduras",
+   "tags": [{
+      "cor": "marrom",
+      "tipo": "passeio"
+   }, {
+      "cor": "amarelo",
+      "tipo": "passeio"
+   }, {
+      "cor": "beje",
+      "tipo": "Massageador"
+   }, {
+      "cor": "verde",
+      "tipo": "passeio"
+   }, {
+      "cor": "marrom",
+      "tipo": "voo"
+   }, {
+      "cor": "marrom",
+      "tipo": "Conforto"
+   }, {
+      "cor": "vermelho",
+      "tipo": "Limpeza"
+   }, {
+      "cor": "verde",
+      "tipo": "Limpeza"
+   }, {
+      "cor": "amarelo",
+      "tipo": "Conforto"
+   }]
+}, {
+   "id": 99,
+   "nome": "Chocoleite",
+   "categoria": "Guloseimas",
+   "tags": [{
+      "cor": "amarelo",
+      "tipo": "Lubrificador"
+   }]
+}]

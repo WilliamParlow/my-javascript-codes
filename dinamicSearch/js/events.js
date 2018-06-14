@@ -1,6 +1,7 @@
 let $ = document.querySelector.bind(document);
 let tableBody = $('#productsListBody');
 let selectBox = $('#findBy');
+let inputSearch = $('#search');
 let bodyRows = [];
 
 window.onload = function() {
@@ -31,17 +32,17 @@ window.onload = function() {
 $('#search').onkeyup = function() {
 
    let searchIndex = parseInt(selectBox.value) + 1;
-   console.log(searchIndex);
+   let searchString = inputSearch.value;
    
 
    bodyRows.forEach(tr => {
 
-      let searchVal = tr.children[searchIndex];
+      let searchVal = tr.children[searchIndex].textContent;
 
-      if (isStringSimilar(searchVal)) {
-         tr.classList.add('hide');
-      } else {
+      if (isStringSimilar(searchString, searchVal)) {
          tr.classList.remove('hide');
+      } else {
+         tr.classList.add('hide');
       }
 
    });

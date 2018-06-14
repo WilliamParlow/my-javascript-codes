@@ -19,7 +19,10 @@ async function getProducts() {
 
 }
 
-function isStringSimilar(searchString) {
+function isStringSimilar(searchString, searchTarget) {
+
+   searchString = searchString.toLowerCase();
+   searchTarget = searchTarget.toLowerCase();
 
    let score = 0;
    
@@ -32,8 +35,19 @@ function isStringSimilar(searchString) {
       }
    }
 
-   if (score > 3) return true;
+   searchString.split('').forEach(charBase => {
+
+      searchTarget.split('').forEach(charTarget => {
+
+         if (charBase == charTarget) score++;
+
+      });
+
+   });
+
+   if (score > searchString.length || searchString.includes(searchTarget)) return true;
 
    return false;
 
 }
+

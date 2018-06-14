@@ -4,48 +4,39 @@ let selectBox = $('#findBy');
 let inputSearch = $('#search');
 let bodyRows = [];
 
-window.onload = function() {
+window.onload = function () {
 
-   getProducts().then(res => {
+   createTable();
 
-      res.forEach(product => {
-
-         let tr = document.createElement('tr');
-
-         tr.innerHTML = `
-            <td>${product.id}</td>
-            <td>${product.nome}</td>
-            <td>${product.categoria}</td>
-            <td>${product.tags.map(tag => `${tag.tipo}, ${tag.cor}<span> | </span>`).join('')}</td>
-         `;
-
-         tableBody.appendChild(tr);
-
-      });
-
-      bodyRows = Array.from(tableBody.rows);
-
-   })
-   
 }
 
-$('#search').onkeyup = function() {
+$('#search').onkeyup = function () {
 
-   let searchIndex = parseInt(selectBox.value) + 1;
    let searchString = inputSearch.value;
-   
+   let objectIndex = selectBox.selectedOptions[0].textContent.toLowerCase()
 
-   bodyRows.forEach(tr => {
+   // Use to search by score if score has value more high then searched chars
+   //
+   // let searchIndex = parseInt(selectBox.value) + 1;
+   //
+   // bodyRows.forEach(tr => {
+   //
+   //    let searchVal = tr.children[searchIndex].textContent;
+   //
+   //    if (isStringSimilar(searchString, searchVal)) {
+   //       tr.classList.remove('hide');
+   //    } else {
+   //       tr.classList.add('hide');
+   //    }
+   //
+   // });
 
-      let searchVal = tr.children[searchIndex].textContent;
-
-      if (isStringSimilar(searchString, searchVal)) {
-         tr.classList.remove('hide');
-      } else {
-         tr.classList.add('hide');
-      }
-
-   });
+   if (searchString) {
+      searchByScore(objectIndex, searchString);
+   } else {
+      getProducts().then(res => {
+         createTable(res);
+      });
+   }
 
 }
-

@@ -1,4 +1,4 @@
-# MyTravelsWithJavaScript
+# my-javascript-codes
 A repository to place all my JavaScript codes :)  Made with love with JS&nbsp;&nbsp;:heart:
 
 ### Links for each project

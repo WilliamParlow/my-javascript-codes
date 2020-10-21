@@ -10,9 +10,9 @@
 
 ::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  background: rgb(255, 255, 255);
+  background-color: rgba(182, 83, 105, 1);
 }
 
 ::-webkit-scrollbar-thumb:window-inactive {
-  background-color: rgba(182, 83, 105, 1);
+  background-color: rgba(182, 83, 105, .8);
 }

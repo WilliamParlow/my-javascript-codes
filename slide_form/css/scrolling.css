@@ -16,3 +16,16 @@
 ::-webkit-scrollbar-thumb:window-inactive {
   background-color: rgba(182, 83, 105, .8);
 }
+
+@media screen and (max-width: 520px) {
+  ::-webkit-scrollbar,
+  ::-webkit-scrollbar-track,
+  ::-webkit-scrollbar-thumb,
+  ::-webkit-scrollbar-thumb:window-inactive {
+    width: 0;
+    height: 0;
+    display: none;
+    background-color: transparent;
+    border-radius: 0;
+  }
+}

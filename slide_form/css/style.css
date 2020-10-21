@@ -1,0 +1,210 @@
+* {
+  font-family: "Roboto";
+  box-sizing: border-box;
+  color: #555;
+}
+
+html, body {
+  overflow: hidden;
+}
+
+main.main {
+  height: auto;
+  min-height: 100vh;
+  background-color: rgb(182, 83, 105);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+section.form-section {
+  width: 60vw;
+  height: 70vh;
+  background-color: #FFF;
+  border-radius: 10px;
+  box-shadow: 4px 4px 12px -5px;
+  position: absolute;
+  transform: translateX(100vw);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.form-header {
+  padding: 3rem 3rem 3rem 3rem;
+  font-size: 1.6rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px 10px 0 0;
+  flex-grow: 1;
+}
+
+.form-header::after {
+  content: '';
+  bottom: 0;
+  display: flex;
+  align-self: auto;
+  height: 3px;
+  border-radius: 100%;
+  background-color: rgba(182, 83, 105, .8);
+  width: 100%;
+  margin-top: 1.3rem;
+}
+
+.form-content {
+  padding: 1rem 3rem 1rem 3rem;
+  flex-grow: 1;
+}
+
+.form-row, .form-item {
+  display: flex;
+}
+
+.form-row {
+  justify-content: space-between;
+}
+
+.form-item {
+  flex-direction: column;
+  width: 100%;
+  padding: .6rem;
+}
+
+.form-item label {
+  font-size: .8rem;
+  font-weight: bold;
+  margin-bottom: .2rem;
+}
+
+.form-item input {
+  position: relative;
+  border: none;
+  outline: none;
+  color: #777;
+  padding: .4rem 0 .3rem 0rem;
+  transition: .3s;
+  border-radius: 4px;
+}
+
+.form-item span {
+  display: block;
+  height: 2px;
+  background-color: #444;
+  width: 100%;
+}
+
+.form-item input:focus, .form-item input:hover {
+  background-color: #EEE;
+  transition: .3s;
+}
+
+.form-section.active {
+  right: 100%;
+  animation: form-move 1s;
+  animation-fill-mode: forwards;
+  transition: 1s ease-in-out;
+}
+
+.form-footer {
+  padding: .3rem;
+  margin-top: 3rem;
+  background-color: #EEE;
+  clear: both;
+  border-radius: 0 0 8px 8px;
+}
+
+button {
+  border: none;
+  background: #FFF;
+  outline: none;
+  cursor: pointer;
+  padding: 1rem 2rem;
+  margin: .2rem;
+  border-radius: 10px;
+  border: solid 1px #CCC;
+  transition: .2s;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #EEE;
+  transition: .2s;
+}
+
+button.btn-style1 {
+  border-color: rgb(11, 73, 143);
+}
+
+button.btn-style1:hover {
+  background-color: rgb(18, 113, 221);
+  color: #FFF;
+}
+
+button.btn-style2 {
+  border-color: rgb(128, 52, 68);
+}
+
+button.btn-style2:hover {
+  background-color: rgb(182, 83, 105);
+  color: #FFF;
+}
+
+.next {
+  float: right;
+}
+
+.prev {
+  float: left;
+}
+
+.submit {
+  float: right;
+}
+
+.fade-out-left {
+  animation: fade-out-left 1s;
+  animation-fill-mode: forwards;
+  transition: 1s ease-in-out;
+}
+
+.fade-out-right {
+  animation: fade-out-right 1s;
+  animation-fill-mode: forwards;
+  transition: 1s ease-in-out;
+}
+
+@keyframes form-move {
+  from {
+    transform: translateX(100vw);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(calc(50vw + 50%));
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out-left {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(-100vw);
+    opacity: 0;
+  }
+}
+
+@keyframes fade-out-right {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(100vw);
+    opacity: 0;
+  }
+}

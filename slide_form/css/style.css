@@ -221,6 +221,10 @@ button.btn-style2:hover {
     flex-direction: column;
   }
   section.form-section {
-    width: 95vw;
+    width: 100vw;
+    height: 100vh;
+    min-width: 100vw;
+    max-height: 100vh;
+    border-radius: 0;
   }
 }

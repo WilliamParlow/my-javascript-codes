@@ -33,7 +33,7 @@ section.form-section {
 }
 
 .form-header {
-  padding: 3rem 3rem 3rem 3rem;
+  padding: 3rem;
   font-size: 1.6rem;
   position: relative;
   display: flex;
@@ -226,5 +226,19 @@ button.btn-style2:hover {
     min-width: 100vw;
     max-height: 100vh;
     border-radius: 0;
+  }
+  .form-header {
+    padding: 2rem;
+    font-size: 1.6rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px 10px 0 0;
+    flex-grow: 1;
+  }
+  .form-footer {
+    padding: .3rem;
+    margin-top: 2rem;
   }
 }

@@ -227,6 +227,9 @@ button.btn-style2:hover {
     max-height: 100vh;
     border-radius: 0;
   }
+  section.form-section:not(.active) {
+    display: none;
+  }
   .form-header {
     padding: 2rem;
     font-size: 1.6rem;

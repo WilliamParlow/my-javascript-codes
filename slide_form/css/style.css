@@ -4,8 +4,13 @@
   color: #555;
 }
 
-html, body, main.main {
+html, body, main.main, div.mobile-overflow {
   overflow: hidden;
+}
+
+div.mobile-overflow {
+  overflow: hidden;
+  position: relative;
 }
 
 main.main {
@@ -226,9 +231,6 @@ button.btn-style2:hover {
     min-width: 100vw;
     max-height: 100vh;
     border-radius: 0;
-  }
-  section.form-section:not(.active) {
-    display: none;
   }
   .form-header {
     padding: 2rem;

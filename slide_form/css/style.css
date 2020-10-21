@@ -4,7 +4,7 @@
   color: #555;
 }
 
-html, body {
+html, body, main.main {
   overflow: hidden;
 }
 
@@ -15,12 +15,12 @@ main.main {
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
 }
 
 section.form-section {
   width: 60vw;
-  height: 70vh;
+  min-height: 70vh;
+  max-height: 95vh;
   background-color: #FFF;
   border-radius: 10px;
   box-shadow: 4px 4px 12px -5px;
@@ -29,6 +29,7 @@ section.form-section {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  overflow-y: auto;
 }
 
 .form-header {
@@ -206,5 +207,20 @@ button.btn-style2:hover {
   to {
     transform: translateX(100vw);
     opacity: 0;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .form-row {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .form-row {
+    flex-direction: column;
+  }
+  section.form-section {
+    width: 95vw;
   }
 }

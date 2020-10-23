@@ -16,25 +16,29 @@ div.mobile-overflow {
 main.main {
   height: auto;
   min-height: 100vh;
-  background-color: rgb(182, 83, 105);
+  background-color: #C25970;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 section.form-section {
-  width: 60vw;
-  min-height: 70vh;
-  max-height: 95vh;
+  width: 50vw;
+  min-height: 100vh;
   background-color: #FFF;
-  border-radius: 10px;
-  box-shadow: 4px 4px 12px -5px;
+  box-shadow: 0 0 28px -7px #36191F;
   position: absolute;
   transform: translateX(100vw);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   overflow-y: auto;
+}
+
+section.form-container {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
 }
 
 .form-header {
@@ -55,14 +59,14 @@ section.form-section {
   align-self: auto;
   height: 3px;
   border-radius: 100%;
-  background-color: rgba(182, 83, 105, .8);
+  background-color: #C25970;
   width: 100%;
   margin-top: 1.3rem;
 }
 
 .form-content {
   padding: 1rem 3rem 1rem 3rem;
-  flex-grow: 1;
+  width: 100%;
 }
 
 .form-row, .form-item {
@@ -141,16 +145,16 @@ button:hover {
 }
 
 button.btn-style1 {
-  border-color: rgb(11, 73, 143);
+  border-color: #4F67C2;
 }
 
 button.btn-style1:hover {
-  background-color: rgb(18, 113, 221);
+  background-color: #6c86eb;
   color: #FFF;
 }
 
 button.btn-style2 {
-  border-color: rgb(128, 52, 68);
+  border-color: #A84D61;
 }
 
 button.btn-style2:hover {
@@ -231,6 +235,7 @@ button.btn-style2:hover {
     min-width: 100vw;
     max-height: 100vh;
     border-radius: 0;
+    box-shadow: none;
   }
   .form-header {
     padding: 2rem;
@@ -245,5 +250,11 @@ button.btn-style2:hover {
   .form-footer {
     padding: .3rem;
     margin-top: 2rem;
+  }
+}
+
+@media screen and (min-width: 1480px) {
+  section.form-section {
+    width: 40vw;
   }
 }

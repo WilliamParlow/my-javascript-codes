@@ -1,0 +1,103 @@
+* {
+  font-family: "Roboto";
+  box-sizing: border-box;
+  color: #555;
+}
+
+div.mobile-overflow {
+  overflow: hidden;
+  position: relative;
+}
+
+.content-section {
+  /*opacity: 0;*/
+  transition: 1s ease-in-out;
+}
+
+.content-section.show {
+  opacity: 1;
+  transition: 1s ease-in-out;
+}
+
+.presentation-section {
+  height: 100vh;
+  background-image: url('../assets//images/fuji.webp');
+  background-position-y: top;
+  background-position-x: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.presentation-section::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 140px -60px #000 inset;
+}
+
+.presentation-content {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 3rem 2rem;
+  position: relative;
+}
+
+.presentation-content header h1, .presentation-content section p {
+  color: #EEE;
+  text-align: center;
+  position: relative;
+}
+
+.presentation-content header h1 {
+  font-size: 3rem;
+  z-index: 1;
+  margin-bottom: 3rem;
+}
+
+.presentation-content header h1::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 1rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+.see-more-arrow {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  border: solid #EEE;
+  border-width: 0 .4rem .4rem 0;
+  padding: 1rem;
+  z-index: 10;
+  border-radius: 0 5px 5px 5px;
+  animation: arrow-down-moving 1s ease-in-out infinite;
+  cursor: pointer;
+}
+
+.curiosities-section {
+  height: 100vh;
+}
+
+@keyframes arrow-down-moving {
+  0% {
+    transform: rotate(45deg);
+    opacity: 0;
+  }
+  50% {
+    transform: rotate(45deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(2rem) rotate(45deg);
+    opacity: 0;
+  }
+}

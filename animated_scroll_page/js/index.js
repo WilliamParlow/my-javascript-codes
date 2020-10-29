@@ -31,4 +31,10 @@ window.onload = () => {
       cancelAnimationFrame(animationFrameId);
     }
   }
+
+  window.ontouchmove = () => {
+    if (animationFrameId) {
+      cancelAnimationFrame(animationFrameId);
+    }
+  }
 }

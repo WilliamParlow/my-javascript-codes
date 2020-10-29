@@ -10,5 +10,6 @@ A repository to place all my JavaScript codes :)  Made with love with JS&nbsp;&n
 * [My Worm Game](https://williamparlow.github.io/my-javascript-codes/WormGame/)
 * [Step-by-step](https://williamparlow.github.io/my-javascript-codes/slide_form/)
 * [Textarea break line](https://williamparlow.github.io/my-javascript-codes/textarea_breakline/)
+* [Animated Scroll Page](https://williamparlow.github.io/my-javascript-codes/animated_scroll_page/)
 
 #### _*OBS: Use Chromium based browser for the best user experience. Developed to use all new JS, HTML and CSS especifications*_

@@ -8,6 +8,11 @@ div.mobile-overflow {
   position: relative;
 }
 
+p {
+  text-indent: 2.6rem;
+  margin-bottom: 1rem;
+}
+
 .content-section {
   /*opacity: 0;*/
   transition: 1s ease-in-out;
@@ -44,12 +49,16 @@ div.mobile-overflow {
   padding: 6rem 4rem;
   position: relative;
   box-shadow: 0 0 2px #000;
+  border-radius: 10px;
 }
 
 .presentation-content header h1, .presentation-content section p {
   color: #FFF;
   text-align: center;
   position: relative;
+  text-indent: 0;
+  padding: 0;
+  margin: 0;
 }
 
 .presentation-content header h1 {
@@ -75,7 +84,7 @@ div.mobile-overflow {
 }
 
 .curiosities-section {
-  padding: 2rem 4rem;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
 }
@@ -86,19 +95,18 @@ div.mobile-overflow {
 
 .curiosity-item {
   display: flex;
-  padding: 1rem;
+  padding: 1rem 1rem 1rem 0;
   justify-content: center;
   align-items: center;
-  line-height: 1.3rem;
+  line-height: 1.6rem;
+  text-align: justify;
+  margin-top: 2rem;
 }
-
-.fuji-curiosity {}
 
 .content-reverse {
   flex-direction: row-reverse;
+  padding: 1rem 0 1rem 1rem;
 }
-
-.fuji-history-curiosity {}
 
 .curiosity-img-container {
   position: relative;
@@ -107,6 +115,7 @@ div.mobile-overflow {
 .curiosity-img {
   max-width: 30rem;
   max-height: 20rem;
+  border-radius: 10px;
 }
 
 .curiosity-img-overlay {
@@ -117,12 +126,12 @@ div.mobile-overflow {
   height: 100%;
   top: 0;
   left: 0;
-  background: linear-gradient(to left, rgba(255, 255, 255, 1) 5%, rgba(255, 255, 255, 0));
+  background: linear-gradient(to left, rgba(255, 255, 255, 1) 5%, rgba(255, 255, 255, 0) 60%);
   z-index: 10;
 }
 
 .curiosity-img-overlay-reverse {
-  background: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1) 95%);
+  background: linear-gradient(to left, rgba(255, 255, 255, 0) 35%, rgba(255, 255, 255, 1) 95%);
 }
 
 @keyframes arrow-down-moving {
@@ -140,6 +149,47 @@ div.mobile-overflow {
   }
 }
 
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 896px) {
+  .curiosity-img {
+    max-width: 20rem;
+    max-height: 15rem;
+  }
+  .presentation-content {
+    border-radius: 0;
+  }
+}
 
+@media screen and (max-width: 778px) {
+  .curiosities-section {
+    padding: 1.5rem;
+  }
+  .curiosity-item {
+    flex-direction: column-reverse;
+    margin-bottom: 1rem;
+  }
+  .curiosity-img-container {
+    width: 100%;
+  }
+  .curiosity-img {
+    width: 100%;
+    max-width: none;
+    max-height: none;
+  }
+  .curiosity-img-overlay {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 30%, rgba(255, 255, 255, 1));
+  }
+}
+
+@media screen and (max-width: 592px) {
+  .curiosity-item {
+    flex-direction: column-reverse;
+    margin-bottom: 1rem;
+  }
+  .curiosities-section {
+    padding: 1rem;
+  }
+  p {
+    text-indent: 2.6rem;
+    margin-bottom: 1rem;
+  }
 }

@@ -6,7 +6,7 @@ window.onload = () => {
     const target = event.target;
     const parentSection = target.parentElement;
     const nextSection = parentSection.nextElementSibling;
-    targetScroll = nextSection.offsetTop;
+    targetScroll = (nextSection.offsetHeight > nextSection.offsetTop) ? nextSection.offsetTop : nextSection.offsetHeight;
     currentScroll = window.scrollY;
     softScroll();
   }

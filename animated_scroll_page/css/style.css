@@ -14,13 +14,13 @@ p {
 }
 
 .content-section {
-  /*opacity: 0;*/
+  opacity: 0;
   transition: 1s ease-in-out;
 }
 
 .content-section.show {
-  opacity: 1;
-  transition: 1s ease-in-out;
+  opacity: 1 !important;
+  transition: .5s ease-in-out;
 }
 
 .presentation-section {
@@ -97,7 +97,7 @@ p {
 .curiosities-section {
   display: flex;
   flex-direction: column;
-  background: linear-gradient(40deg, #b73734 0%, #b73734 10%, #FFF 10%, #FFF 90%, #b73734 90%, #b73734 100%);
+  background: linear-gradient(45deg, #b73734 0%, #b73734 10%, #FFF 10%, #FFF 90%, #b73734 90%, #b73734 100%);
 }
 
 .curiosity-content {

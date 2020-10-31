@@ -83,22 +83,26 @@ p {
   cursor: pointer;
 }
 
+.curiosities-title {
+  padding: 0 2rem;
+  margin: 4rem 0 0 0;
+}
+
+.curiosities-title h1 {
+  font-size: 3rem;
+  text-decoration: underline;
+  text-decoration-color: #b73734;
+}
+
 .curiosities-section {
   display: flex;
   flex-direction: column;
+  background: linear-gradient(40deg, #b73734 0%, #b73734 10%, #FFF 10%, #FFF 90%, #b73734 90%, #b73734 100%);
 }
 
 .curiosity-content {
   display: flex;
   padding: 4rem 2rem;
-}
-
-.curiosity-content:nth-child(2n) {
-  background: linear-gradient(160deg, #FFF 60%, #b73734 60%);
-}
-
-.curiosity-content:nth-child(2n+1) {
-  background: linear-gradient(340deg, #FFF 60%, #b73734 60%);
 }
 
 .curiosity-item {
@@ -143,11 +147,17 @@ p {
   background: linear-gradient(to left, rgba(255, 255, 255, 1) 5%, rgba(255, 255, 255, 0) 60%);
   z-index: 10;
   border-radius: 10px;
+}
+
+.content-reverse .curiosity-img {
+  background: linear-gradient(to right, rgba(255, 255, 255, 1) 5%, rgba(255, 255, 255, 0) 60%);
+}
+
+.curiosity-item .curiosity-img {
   box-shadow: 4px 4px 8px -6px #000;
 }
 
-.curiosity-img-overlay-reverse {
-  background: linear-gradient(to right, rgba(255, 255, 255, 1) 5%, rgba(255, 255, 255, 0) 60%);
+.content-reverse .curiosity-img {
   box-shadow: -4px 4px 8px -6px #000;
 }
 
@@ -187,6 +197,9 @@ p {
   .content-section {
     padding: 0;
   }
+  .curiosities-title h1 {
+    font-size: 2rem;
+  }
   .curiosity-item {
     flex-direction: column-reverse;
     padding: 1rem;
@@ -199,6 +212,7 @@ p {
     width: 100%;
     max-width: none;
     max-height: none;
+    box-shadow: 0 4px 8px -6px #000 !important;
   }
   .curiosity-text-contentainer {
     padding: 2rem 1rem 1rem 1rem;
@@ -211,6 +225,7 @@ p {
   }
   .curiosity-content {
     padding: 0;
+    background: none !important;
   }
   .presentation-content header h1 {
     font-size: 2.4rem;

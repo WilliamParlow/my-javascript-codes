@@ -149,7 +149,7 @@ p {
   border-radius: 10px;
 }
 
-.content-reverse .curiosity-img {
+.content-reverse .curiosity-img-overlay {
   background: linear-gradient(to right, rgba(255, 255, 255, 1) 5%, rgba(255, 255, 255, 0) 60%);
 }
 

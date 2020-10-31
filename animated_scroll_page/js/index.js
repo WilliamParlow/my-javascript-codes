@@ -40,19 +40,25 @@ window.onload = () => {
 
   let sections = Array.from(document.querySelectorAll('.content-section'));
   window.onscroll = () => {
-    let scrollY = window.scrollY;
-    sections.every(section => {
-      let didNotReachedTarget = true
-      const sectionOffsetTop = section.offsetTop;
-
-      if (scrollY >= sectionOffsetTop * 0.4) {
-        if (!section.classList.contains('show')) {
-          section.classList.add('show')
-          didNotReachedTarget = false;
-        }
-      }
-
-      return didNotReachedTarget;
-    });
+    updateScrollAnimation(sections);
   }
+
+  updateScrollAnimation(sections);
+}
+
+const updateScrollAnimation = (sections) => {
+  let scrollY = window.scrollY;
+  sections.every(section => {
+    let didNotReachedTarget = true
+    const sectionOffsetTop = section.offsetTop;
+
+    if (scrollY >= sectionOffsetTop * 0.4) {
+      if (!section.classList.contains('show')) {
+        section.classList.add('show')
+        didNotReachedTarget = false;
+      }
+    }
+
+    return didNotReachedTarget;
+  });
 }

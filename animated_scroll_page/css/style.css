@@ -113,7 +113,7 @@ h1 {
 .curiosities-section {
   display: flex;
   flex-direction: column;
-  background: linear-gradient(45deg, #245c9c 0%, #245c9c 5%, #FFF 5%, #FFF 95%, #b73734 95%, #b73734 100%);
+  background: linear-gradient(45deg,#FFF 0%, #FFF 95%, #b73734 95%, #b73734 100%);
 }
 
 .curiosity-content {

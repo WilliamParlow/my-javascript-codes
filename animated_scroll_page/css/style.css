@@ -1,3 +1,7 @@
+/*
+ * General
+ */
+
 * {
   font-family: 'Raleway', sans-serif;
   box-sizing: border-box;
@@ -13,6 +17,10 @@ p {
   margin-bottom: 1rem;
 }
 
+h1 {
+  text-transform: uppercase;
+}
+
 .content-section {
   opacity: 0;
   transition: 1s ease-in-out;
@@ -22,6 +30,10 @@ p {
   opacity: 1 !important;
   transition: .5s ease-in-out;
 }
+
+/*
+ * Presentation section
+ */
 
 .presentation-section {
   height: 100vh;
@@ -83,13 +95,17 @@ p {
   cursor: pointer;
 }
 
+/*
+ * Curiosity section
+ */
+
 .curiosities-title {
   padding: 0 2rem;
-  margin: 4rem 0 0 0;
+  margin: 8rem 0 2rem 0;
 }
 
 .curiosities-title h1 {
-  font-size: 3rem;
+  font-size: 2.4rem;
   text-decoration: underline;
   text-decoration-color: #b73734;
 }
@@ -97,7 +113,7 @@ p {
 .curiosities-section {
   display: flex;
   flex-direction: column;
-  background: linear-gradient(45deg, #b73734 0%, #b73734 10%, #FFF 10%, #FFF 90%, #b73734 90%, #b73734 100%);
+  background: linear-gradient(45deg, #245c9c 0%, #245c9c 5%, #FFF 5%, #FFF 95%, #b73734 95%, #b73734 100%);
 }
 
 .curiosity-content {
@@ -161,6 +177,83 @@ p {
   box-shadow: -4px 4px 8px -6px #000;
 }
 
+/*
+ * Things to do section
+ */
+
+.todo-things-section {
+  background-image: url('../assets//images/fuji-light.webp');
+  background-position-y: top;
+  background-position-x: center;
+  background-size: cover;
+}
+
+.todo-things {
+  padding: 3rem;
+  display: flex;
+  color: #000;
+  flex-wrap: wrap;
+}
+
+.todo-things-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4rem 0 0 0;
+  padding: 1rem;
+  width: 33%;
+  height: 100%;
+}
+
+.todo-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+  text-align: center;
+  background-color: #EEE;
+  border-radius: 10px;
+  box-shadow: 4px 4px 8px -6px #000;
+  height: 100%;
+}
+
+.todo-item-img-container, .todo-item, .todo-item-img-container img {
+  border-radius: 10px;
+}
+
+.todo-item-img-container img {
+  width: 100%;
+  min-height: 22rem;
+  border-radius: 10px 10px 0 0;
+  display: flex;
+}
+
+.todo-things-title {
+  text-align: center;
+  padding: 6rem 0 6rem 0;
+  background-color: #245c9c;
+}
+
+.todo-things-title h1 {
+  font-size: 2.4rem;
+  text-decoration: underline;
+  color: #FFF;
+  text-decoration-color: #DDD;
+  padding: 0 1rem;
+}
+
+.todo-item-text {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*
+ * Animations 
+ */
+
 @keyframes arrow-down-moving {
   0% {
     transform: rotate(45deg);
@@ -176,10 +269,20 @@ p {
   }
 }
 
-@media screen and (min-width: 1280px) {
+/*
+ * Media screens
+ */
+
+ @media screen and (min-width: 1280px) {
   .curiosity-img {
     max-width: 45rem;
     max-height: 35rem;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .todo-things-item {
+    width: 50%;
   }
 }
 
@@ -197,7 +300,7 @@ p {
   .content-section {
     padding: 0;
   }
-  .curiosities-title h1 {
+  .curiosities-title h1, .todo-things-title h1 {
     font-size: 2rem;
   }
   .curiosity-item {
@@ -232,6 +335,19 @@ p {
   }
   .presentation-content section p {
     font-size: 80%;
+  }
+  .todo-things {
+    padding: 0;
+    flex-direction: column;
+  }
+  .todo-item {
+    padding: 0;
+  }
+  .curiosities-section {
+    padding-bottom: 2rem;
+  }
+  .todo-things-item {
+    width: 100%;
   }
 }
 

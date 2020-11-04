@@ -48,16 +48,10 @@ window.onload = () => {
 
 const updateScrollAnimation = (sections) => {
   let scrollY = window.scrollY;
-  sections.every(section => {
-    let didNotReachedTarget = true
+  sections.forEach(section => {
     const sectionOffsetTop = section.offsetTop - (window.innerHeight * 0.9);
-    if (scrollY >= sectionOffsetTop) {
-      if (!section.classList.contains('show')) {
-        section.classList.add('show')
-        didNotReachedTarget = false;
-      }
-    }
-
-    return didNotReachedTarget;
+    if (scrollY >= sectionOffsetTop)
+      if (!section.classList.contains('show'))
+        section.classList.add('show');
   });
 }

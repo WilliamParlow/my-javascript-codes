@@ -224,7 +224,7 @@ h1 {
 
 .todo-item-img-container img {
   width: 100%;
-  min-height: 22rem;
+  height: 22rem;
   border-radius: 10px 10px 0 0;
   display: flex;
 }

@@ -3,7 +3,7 @@
  */
 
 * {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Nunito', sans-serif;
   box-sizing: border-box;
 }
 
@@ -74,10 +74,14 @@ h1 {
 }
 
 .presentation-content header h1 {
-  font-size: 3rem;
+  font-size: 3.2rem;
   z-index: 1;
   margin-bottom: 3rem;
   font-variant-caps: all-petite-caps;
+}
+
+.presentation-content p {
+  font-size: 1.1rem;
 }
 
 .see-more-arrow {
@@ -99,26 +103,15 @@ h1 {
  * Curiosity section
  */
 
-.curiosities-title {
-  padding: 0 2rem;
-  margin: 8rem 0 2rem 0;
-}
-
-.curiosities-title h1 {
-  font-size: 2.4rem;
-  text-decoration: underline;
-  text-decoration-color: #b73734;
-}
-
 .curiosities-section {
   display: flex;
   flex-direction: column;
-  background: linear-gradient(45deg,#FFF 0%, #FFF 95%, #b73734 95%, #b73734 100%);
+  /*background: linear-gradient(45deg,#FFF 0%, #FFF 95%, #b73734 95%, #b73734 100%);*/
 }
 
 .curiosity-content {
   display: flex;
-  padding: 4rem 2rem;
+  padding: 4rem 16vw;
 }
 
 .curiosity-item {
@@ -146,27 +139,14 @@ h1 {
   padding: 2rem;
 }
 
+.curiosity-text-contentainer p {
+  line-height: 1.6rem;
+}
+
 .curiosity-img {
   max-width: 30rem;
   max-height: 20rem;
   border-radius: 10px;
-}
-
-.curiosity-img-overlay {
-  content: '';
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background: linear-gradient(to left, rgba(255, 255, 255, 1) 5%, rgba(255, 255, 255, 0) 60%);
-  z-index: 10;
-  border-radius: 10px;
-}
-
-.content-reverse .curiosity-img-overlay {
-  background: linear-gradient(to right, rgba(255, 255, 255, 1) 5%, rgba(255, 255, 255, 0) 60%);
 }
 
 .curiosity-item .curiosity-img {
@@ -182,14 +162,13 @@ h1 {
  */
 
 .todo-things-section {
-  background-image: url('../assets//images/fuji-light.webp');
   background-position-y: top;
   background-position-x: center;
   background-size: cover;
 }
 
 .todo-things {
-  padding: 3rem;
+  padding: 3rem 16vw;
   display: flex;
   color: #000;
   flex-wrap: wrap;
@@ -202,7 +181,6 @@ h1 {
   margin: 4rem 0 0 0;
   padding: 1rem;
   width: 33%;
-  height: 100%;
 }
 
 .todo-item {
@@ -210,16 +188,37 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #000;
+  color: #EFEFEF;
   text-align: center;
-  background-color: #EEE;
+  background-color: #4b91af;
   border-radius: 10px;
   box-shadow: 4px 4px 8px -6px #000;
+}
+
+.curiosity-img-overlay {
+  transition: .3s ease-in-out;
+}
+
+.curiosity-img-container:hover .curiosity-img-overlay, .todo-item:hover .curiosity-img-overlay {
+  transition: .3s ease-in-out;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.curiosity-img-overlay {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100%;
   height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  border-radius: 10px;
 }
 
 .todo-item-img-container, .todo-item, .todo-item-img-container img {
   border-radius: 10px;
+  position: relative;
 }
 
 .todo-item-img-container img {
@@ -229,13 +228,13 @@ h1 {
   display: flex;
 }
 
-.todo-things-title {
+.section-title {
   text-align: center;
   padding: 6rem 0 6rem 0;
-  background-color: #245c9c;
+  background-color: #025f88;
 }
 
-.todo-things-title h1 {
+.section-title h1 {
   font-size: 2.4rem;
   text-decoration: underline;
   color: #FFF;
@@ -250,9 +249,38 @@ h1 {
   align-items: center;
 }
 
+.footer-section footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  background-color: #307B9B;
+  color: #EFEFEF;
+}
+
+.footer-section footer::after {
+  animation: in-progress 3s ease-in-out infinite;
+  content: 'In progress';
+}
+
 /*
  * Animations 
  */
+
+@keyframes in-progress {
+  25% {
+    content: 'In progress.';
+  }
+
+  50% {
+    content: 'In progress..';
+  }
+
+  75% {
+    content: 'In progress...';
+  }
+}
 
 @keyframes arrow-down-moving {
   0% {
@@ -273,34 +301,51 @@ h1 {
  * Media screens
  */
 
- @media screen and (min-width: 1280px) {
+@media screen and (min-width: 1480px) {
   .curiosity-img {
-    max-width: 45rem;
+    max-width: 40rem;
     max-height: 35rem;
+  }
+  .curiosity-text-contentainer p {
+    font-size: 1.1rem;
+    line-height: 2rem;
+  }
+}
+
+@media screen and (max-width: 1480px) {
+  .todo-things-item {
+    width: 50%;
+  }
+  .todo-things {
+    padding: 3rem 10vw;
+  }
+  .curiosity-img {
+    max-width: 32rem;
+    max-height: 27rem;
+  }
+  .curiosity-content {
+    padding: 2rem 10vw;
   }
 }
 
 @media screen and (max-width: 1280px) {
-  .todo-things-item {
-    width: 50%;
+  .curiosity-img {
+    max-width: 29rem;
+    max-height: 24rem;
+  }
+  .curiosity-content {
+    padding: 1rem 8vw;
+  }
+  .todo-things {
+    padding: 3rem 8vw;
   }
 }
 
 @media screen and (max-width: 896px) {
-  .curiosity-img {
-    max-width: 20rem;
-    max-height: 15rem;
-  }
-  .presentation-content {
-    border-radius: 0;
-  }
-}
-
-@media screen and (max-width: 778px) {
   .content-section {
     padding: 0;
   }
-  .curiosities-title h1, .todo-things-title h1 {
+  .section-title h1 {
     font-size: 2rem;
   }
   .curiosity-item {
@@ -320,9 +365,6 @@ h1 {
   .curiosity-text-contentainer {
     padding: 2rem 1rem 1rem 1rem;
   }
-  .curiosity-img-overlay {
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 30%, rgba(255, 255, 255, 1));
-  }
   .presentation-content {
     padding: 3rem 2rem;
   }
@@ -334,7 +376,7 @@ h1 {
     font-size: 2.4rem;
   }
   .presentation-content section p {
-    font-size: 80%;
+    font-size: .8rem;
   }
   .todo-things {
     padding: 0;

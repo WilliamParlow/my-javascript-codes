@@ -15,7 +15,7 @@ window.onload = () => {
   let animationFrameId;
   const softScroll = () => {
     const diff = targetScroll - window.scrollY;
-    const delta = Math.abs(diff) < 0.1 ? 0 : diff * ease;
+    const delta = Math.abs(diff) < 0.5 ? 0 : diff * ease;
     if (delta) {
       currentScroll += delta;
       animationFrameId = requestAnimationFrame(softScroll);
@@ -49,7 +49,7 @@ window.onload = () => {
 const updateScrollAnimation = (sections) => {
   let scrollY = window.scrollY;
   sections.forEach(section => {
-    const sectionOffsetTop = section.offsetTop - (window.innerHeight * 0.9);
+    const sectionOffsetTop = section.offsetTop - (window.innerHeight * 0.8);
     if (scrollY >= sectionOffsetTop)
       if (!section.classList.contains('show'))
         section.classList.add('show');

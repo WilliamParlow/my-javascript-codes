@@ -283,6 +283,11 @@ footer.footer-contact {
     color: #FFF;
 }
 
+footer.footer-contact a {
+    color: #FFF;
+    font-size: 1.6rem;
+}
+
 /*
  * Animations 
  */

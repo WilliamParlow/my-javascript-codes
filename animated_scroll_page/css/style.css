@@ -249,38 +249,34 @@ h1 {
   align-items: center;
 }
 
-.footer-section footer {
+.page-footer {
+  padding: 6rem 16vw;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  height: 100vh;
+  justify-content: space-between;
+  min-height: 50vh;
   background-color: #307B9B;
   color: #EFEFEF;
 }
 
-.footer-section footer::after {
-  animation: in-progress 3s ease-in-out infinite;
-  content: 'In progress';
+.footer-section-item:not(:last-child) {
+  margin-bottom: 6rem;
+}
+
+.footer-section-item h3 {
+  font-size: 1.1rem;
+  text-shadow: 0 0 1px #FFF;
+  margin-bottom: 2rem;
+}
+
+.footer-section-item ul li {
+  line-height: 1.4rem;
+  padding-left: 1rem;
+  font-size: .8rem;
 }
 
 /*
  * Animations 
  */
-
-@keyframes in-progress {
-  25% {
-    content: 'In progress.';
-  }
-
-  50% {
-    content: 'In progress..';
-  }
-
-  75% {
-    content: 'In progress...';
-  }
-}
 
 @keyframes arrow-down-moving {
   0% {
@@ -339,9 +335,24 @@ h1 {
   .todo-things {
     padding: 3rem 8vw;
   }
+  .page-footer {
+    padding: 6rem 8vw;
+  }
 }
 
 @media screen and (max-width: 896px) {
+  .page-footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 4rem 0;
+  }
+  footer.page-footer .footer-section-item {
+    margin-bottom: 2rem;
+  }
+  .footer-section-item ul li {
+    padding-left: 0;
+  }
   .content-section {
     padding: 0;
   }

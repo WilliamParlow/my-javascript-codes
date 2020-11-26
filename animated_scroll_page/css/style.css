@@ -274,6 +274,19 @@ h1 {
   font-size: .8rem;
 }
 
+footer.footer-contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    background-color: #025f88;
+    color: #FFF;
+}
+
+footer.footer-contact a {
+    color: #FFF; 
+}
+
 /*
  * Animations 
  */

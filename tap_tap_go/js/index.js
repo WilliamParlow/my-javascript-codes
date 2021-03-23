@@ -33,6 +33,8 @@ window.onload = () => {
                 game.player.pos.y = game.canvas_el.height / 2;
 
                 window.onkeydown = game.updatePlayerVelocity;
+                window.ontouchstart = game.updatePlayerVelocityByClickOrTouch;
+                window.onclick = game.updatePlayerVelocityByClickOrTouch;
 
                 game.gameInterval = setInterval(game.play, game.fps);
             },
@@ -77,7 +79,11 @@ window.onload = () => {
                 }
             },
 
-            updatePlayerVelocity: e => {
+            updatePlayerVelocity: () => game.player.velocity = -game.conf.pushForce,
+
+            updatePlayerVelocityByClickOrTouch: () => game.updatePlayerVelocity(),
+
+            updatePlayerVelocityByArrowKey: e => {
                 if (e.keyCode === 38) {
                     game.player.velocity = -game.conf.pushForce;
                 }

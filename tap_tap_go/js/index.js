@@ -4,9 +4,9 @@ window.onload = () => {
             canvas_el: null,
             ctx: null,
             passageSize: null,
-            obstacleDistance: 200,
+            obstacleDistance: 300,
             obstacleSize: 100,
-            fps: (window.mobileCheck()) ? 1000 / 50 : 1000 / 60,
+            fps: 1000 / 60,
             obstacles: [],
             gameInterval: null,
             player: {
@@ -20,8 +20,9 @@ window.onload = () => {
                 points: 0
             },
             conf: {
-                gravity: (window.mobileCheck()) ? 0.6 : 0.4,
-                pushForce: Math.floor(window.innerHeight * 0.008)
+                gravity: 0.4,
+                pushForce: Math.floor(window.innerHeight * 0.008),
+                isMobile: window.mobileCheck()
             },
 
             init: () => {
@@ -51,6 +52,7 @@ window.onload = () => {
                     game.drawPlayer();
                     game.drawPoints();
                 } else {
+                    game.drawGameOverText();
                     clearInterval(game.gameInterval);
                 }
             },
@@ -93,6 +95,7 @@ window.onload = () => {
             },
 
             drawPoints: () => {
+                game.ctx.font = '16px Arial';
                 game.ctx.fillStyle = '#CCC';
                 game.ctx.fillRect(15, 10, 60, 30)
                 game.ctx.fillStyle = '#000';
@@ -161,6 +164,35 @@ window.onload = () => {
                 game.ctx.fillStyle = '#000';
                 game.ctx.arc(game.player.pos.x, game.player.pos.y, game.player.size, 0, Math.PI * 2);
                 game.ctx.fill();
+            },
+
+            drawGameOverText: () => {
+
+                if (game.conf.isMobile) {
+                    game.ctx.font = 'bold 80px fantasy';
+                    game.ctx.shadowColor = "#F00";
+                    game.ctx.lineWidth = 5;
+
+                    game.ctx.shadowBlur = 7;
+                    game.ctx.strokeText("GAME", game.canvas_el.width / 2 - 90, game.canvas_el.height / 2 - 45);
+                    game.ctx.shadowBlur = 0;
+
+                    game.ctx.shadowBlur = 7;
+                    game.ctx.strokeText("OVER", game.canvas_el.width / 2 - 84, game.canvas_el.height / 2 + 45);
+                    game.ctx.shadowBlur = 0;
+                } else {
+                    game.ctx.font = 'bold 200px fantasy';
+                    game.ctx.shadowColor = "#F00";
+                    game.ctx.lineWidth = 7;
+
+                    game.ctx.shadowBlur = 10;
+                    game.ctx.strokeText("GAME", game.canvas_el.width / 2 - 220, game.canvas_el.height / 2 - 60);
+                    game.ctx.shadowBlur = 0;
+
+                    game.ctx.shadowBlur = 10;
+                    game.ctx.strokeText("OVER", game.canvas_el.width / 2 - 200, game.canvas_el.height / 2 + 120);
+                    game.ctx.shadowBlur = 0;
+                }
             },
 
             clear: () => {

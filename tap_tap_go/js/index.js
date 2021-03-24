@@ -16,7 +16,8 @@ window.onload = () => {
                 },
                 size: 10,
                 isAlive: true,
-                velocity: 0
+                velocity: 0,
+                points: 0
             },
             conf: {
                 gravity: (window.mobileCheck()) ? 0.6 : 0.4,
@@ -28,6 +29,7 @@ window.onload = () => {
                 game.canvas_el.width = `${window.innerWidth - 4}`;
                 game.canvas_el.height = `${window.innerHeight - 4}`;
                 game.ctx = game.canvas_el.getContext('2d');
+                game.ctx.font = '16px Arial';
                 game.passageSize = Math.round(game.canvas_el.height / 6);
                 game.player.pos.x = game.canvas_el.width / 4;
                 game.player.pos.y = game.canvas_el.height / 2;
@@ -47,6 +49,7 @@ window.onload = () => {
                     game.updatePlayer();
                     game.drawObstacles();
                     game.drawPlayer();
+                    game.drawPoints();
                 } else {
                     clearInterval(game.gameInterval);
                 }
@@ -89,7 +92,15 @@ window.onload = () => {
                 }
             },
 
+            drawPoints: () => {
+                game.ctx.fillStyle = '#CCC';
+                game.ctx.fillRect(15, 10, 60, 30)
+                game.ctx.fillStyle = '#000';
+                game.ctx.fillText(game.player.points, 20, 30);
+            },
+
             drawObstacles: () => {
+                game.ctx.fillStyle = '#000';
                 const obstacle = game.getNewObstacle();
 
                 if (obstacle !== undefined)
@@ -107,7 +118,14 @@ window.onload = () => {
                         ...o,
                         x1: o.x1 - 1
                     }
-                }).filter(o => o.x1 + game.obstacleSize >= 0);
+                }).filter(o => {
+                    const isObstacleOutOfCanvas = o.x1 + game.obstacleSize >= 0;
+
+                    if (!isObstacleOutOfCanvas)
+                        game.player.points++;
+
+                    return isObstacleOutOfCanvas;
+                });
             },
 
             getNewObstacle: () => {

@@ -172,27 +172,58 @@ window.onload = () => {
                     game.ctx.font = 'bold 80px fantasy';
                     game.ctx.shadowColor = "#F00";
                     game.ctx.lineWidth = 5;
-
                     game.ctx.shadowBlur = 7;
-                    game.ctx.strokeText("GAME", game.canvas_el.width / 2 - 90, game.canvas_el.height / 2 - 45);
-                    game.ctx.shadowBlur = 0;
 
-                    game.ctx.shadowBlur = 7;
-                    game.ctx.strokeText("OVER", game.canvas_el.width / 2 - 84, game.canvas_el.height / 2 + 45);
-                    game.ctx.shadowBlur = 0;
+                    game.drawGameOverCentrilized(game.ctx.font);
                 } else {
                     game.ctx.font = 'bold 200px fantasy';
                     game.ctx.shadowColor = "#F00";
                     game.ctx.lineWidth = 7;
-
                     game.ctx.shadowBlur = 10;
-                    game.ctx.strokeText("GAME", game.canvas_el.width / 2 - 220, game.canvas_el.height / 2 - 60);
-                    game.ctx.shadowBlur = 0;
 
-                    game.ctx.shadowBlur = 10;
-                    game.ctx.strokeText("OVER", game.canvas_el.width / 2 - 200, game.canvas_el.height / 2 + 120);
-                    game.ctx.shadowBlur = 0;
+                    game.drawGameOverCentrilized(game.ctx.font);
                 }
+            },
+
+            drawGameOverCentrilized: (font) => {
+                let textDimensions = {
+                    game: game.getTextDimensions('GAME', {
+                        font: font
+                    }),
+                    over: game.getTextDimensions('OVER', {
+                        font: font
+                    })
+                };
+
+                const offset = textDimensions.game.width - textDimensions.over.width;
+                textDimensions.game.offset = Math.round((offset > 0) ? 0 : offset);
+                textDimensions.over.offset = Math.round((offset > 0) ? offset : 0);
+
+                game.ctx.strokeText('GAME', offset + game.canvas_el.width * 0.45 - (textDimensions.game.width * 0.5),
+                    (game.canvas_el.height * 0.5) - (textDimensions.over.height * 0.1));
+
+                game.ctx.strokeText('OVER', offset + game.canvas_el.width * 0.45 - (textDimensions.over.width * 0.5),
+                    (game.canvas_el.height * 0.5) + (textDimensions.over.height * 0.65));
+            },
+
+            getTextDimensions: (text, styleProps) => {
+                const div = document.createElement('div');
+
+                div.style.display = 'inline-block';
+
+                Object.keys(styleProps).forEach(key => {
+                    div.style[key] = styleProps[key];
+                });
+
+                div.textContent = text;
+
+                document.body.append(div);
+
+                const dimensions = div.getBoundingClientRect();
+
+                div.remove();
+
+                return dimensions;
             },
 
             clear: () => {

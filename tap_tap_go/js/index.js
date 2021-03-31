@@ -4,7 +4,7 @@ window.onload = () => {
             canvas_el: null,
             ctx: null,
             passageSize: null,
-            obstacleDistance: 300,
+            obstacleDistance: 350,
             obstacleSize: 100,
             fps: 1000 / 60,
             obstacles: [],
@@ -119,7 +119,7 @@ window.onload = () => {
                 game.obstacles = game.obstacles.map(o => {
                     return {
                         ...o,
-                        x1: o.x1 - 1
+                        x1: o.x1 - 2
                     }
                 }).filter(o => {
                     const isObstacleOutOfCanvas = o.x1 + game.obstacleSize >= 0;

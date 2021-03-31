@@ -169,14 +169,14 @@ window.onload = () => {
             drawGameOverText: () => {
 
                 if (game.conf.isMobile) {
-                    game.ctx.font = 'bold 80px fantasy';
+                    game.ctx.font = 'bold 80px Chalkduster fantasy';
                     game.ctx.shadowColor = "#F00";
                     game.ctx.lineWidth = 5;
                     game.ctx.shadowBlur = 7;
 
                     game.drawGameOverCentrilized(game.ctx.font);
                 } else {
-                    game.ctx.font = 'bold 200px fantasy';
+                    game.ctx.font = 'bold 200px Chalkduster fantasy';
                     game.ctx.shadowColor = "#F00";
                     game.ctx.lineWidth = 7;
                     game.ctx.shadowBlur = 10;

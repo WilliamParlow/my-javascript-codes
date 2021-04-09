@@ -42,7 +42,7 @@ window.onload = () => {
                 game.ctx = game.canvas_el.getContext('2d');
                 game.ctx.font = '16px Arial';
 
-                //game.createGameMenu();
+                game.createGameMenu();
             },
 
             createGameMenu: () => {

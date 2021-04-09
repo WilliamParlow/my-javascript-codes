@@ -12,5 +12,6 @@ A repository to place all my JavaScript codes. Made with love with JS&nbsp;&nbsp
 * [Textarea break line](https://williamparlow.github.io/my-javascript-codes/textarea_breakline/)
 * [Animated Scroll Page](https://williamparlow.github.io/my-javascript-codes/animated_scroll_page/)
 * [Tap Tap Go Game](https://williamparlow.github.io/my-javascript-codes/tap_tap_go/)
+* [Physics Simulation Car Game](https://williamparlow.github.io/my-javascript-codes/physic_race/)
 
 #### _*OBS: Use Chromium based browser for the best user experience. Developed to use all new JS, HTML and CSS especifications*_

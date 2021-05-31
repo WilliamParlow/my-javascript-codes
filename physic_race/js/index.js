@@ -6,33 +6,42 @@ window.onload = () => {
             animationFrameId: null,
             car: {
                 isAlive: true,
+                pos: {
+                    x: 100,
+                    y: 100
+                },
                 dim: {
-                    w: 40,
-                    h: 30
+                    w: 40 * 2.5,
+                    h: 30 * 2.5
                 },
                 tireSize: 30 * 0.7,
-                tire: {
+                tires: {
                     rt: {
-                        x: 0,
-                        y: 0
+                        xOffset: 26,
+                        yOffset: 35
                     },
                     ft: {
-                        x: 0,
-                        y: 0
+                        xOffset: 74,
+                        yOffset: 35
                     }
                 },
                 chassis: {
-                    w: 40,
-                    h: 30 / 2
+                    w: 40 * 2.5,
+                    h: 30 / 2 * 2.5
                 },
                 massCenter: {
                     x: 0,
                     y: 0
-                }
+                },
+                aceleration: 0.5,
+                speed: 0,
+                fallSpeed: 0,
+                maxSpeed: 10,
+                wayCode: undefined,
             },
+            road: [],
             conf: {
-                gravity: 0.4,
-                pushForce: Math.floor(window.innerHeight * 0.008)
+                gravity: 0.4
             },
 
             init: () => {
@@ -101,12 +110,26 @@ window.onload = () => {
             triggerStartGame: () => {
                 game.clear();
                 game.canvas_el.onclick = null;
+                window.onkeydown = e => {
+                    if (e.keyCode === 37 || e.keyCode === 39) {
+                        game.car.wayCode = e.keyCode;
+                    }
+                };
+                window.onkeyup = e => {
+                    if (e.keyCode === 37 || e.keyCode === 39) {
+                        game.car.wayCode = undefined;
+                    }
+                };
                 game.animationFrameId = requestAnimationFrame(game.play);
             },
 
             play: () => {
                 if (game.car.isAlive) {
                     game.clear();
+                    game.drawRoad();
+                    game.updateCarSpeed();
+                    game.updateCarPosition();
+                    game.drawCar();
                     requestAnimationFrame(game.play);
                 } else {
                     cancelAnimationFrame(game.animationFrameId);
@@ -133,6 +156,68 @@ window.onload = () => {
 
                 return dimensions;
             },
+
+            drawCar: () => {
+                game.ctx.fillStyle = '#000';
+
+                game.car.pos.y += game.car.fallSpeed;
+
+                game.ctx.fillRect(game.car.pos.x, game.car.pos.y, game.car.chassis.w, game.car.chassis.h);
+
+                game.ctx.beginPath();
+                game.ctx.arc(game.car.pos.x + game.car.tires.rt.xOffset, game.car.pos.y + game.car.tires.rt.yOffset, game.car.tireSize, 0, 2 * Math.PI);
+                game.ctx.fill();
+
+                game.ctx.beginPath();
+                game.ctx.arc(game.car.pos.x + game.car.tires.ft.xOffset, game.car.pos.y + game.car.tires.ft.yOffset, game.car.tireSize, 0, 2 * Math.PI);
+                game.ctx.fill();
+            },
+
+            updateCarSpeed: () => {
+
+                const {
+                    car
+                } = game;
+
+                if (game.car.fallSpeed < 1 && game.car.fallSpeed > -1) {
+                    if (car.wayCode === 39)
+                        car.speed += car.aceleration;
+                    else if (car.wayCode === 37)
+                        car.speed -= car.aceleration;
+                    else {
+                        if (car.speed > 1)
+                            car.speed -= car.aceleration / 6;
+                        else if (car.speed < -1)
+                            car.speed += car.aceleration / 6;
+                        else
+                            car.speed = 0;
+                    }
+                }
+
+                car.fallSpeed += game.conf.gravity;
+
+                if (car.pos.y + car.tireSize * 2 > game.road[0].y && car.fallSpeed > 0)
+                    car.fallSpeed = (car.fallSpeed / 2) * -1;
+
+                if (car.speed > car.maxSpeed)
+                    car.speed = car.maxSpeed;
+                else if (car.speed < -car.maxSpeed)
+                    car.speed = -car.maxSpeed;
+            },
+
+            drawRoad: () => {
+                if (game.road.length === 0)
+                    game.road.push({
+                        x: 0,
+                        w: game.canvas_el.width,
+                        y: game.canvas_el.height - 20,
+                        h: 20
+                    });
+
+                game.ctx.fillRect(game.road[0].x, game.road[0].y, game.road[0].w, game.road[0].h);
+            },
+
+            updateCarPosition: () => game.car.pos.x += game.car.speed,
 
             clear: () => {
                 game.ctx.beginPath();

@@ -97,6 +97,7 @@ window.onload = () => {
             },
 
             initMenuClickEvent: (e, textDimensions) => {
+                game.initRoad();
                 if (e.type === 'click' || e.type === 'touchstart') {
                     if (e.clientX > textDimensions.positionX && e.clientX < (textDimensions.positionX + textDimensions.textWidth) &&
                         e.clientY < textDimensions.positionY && e.clientY > (textDimensions.positionY - textDimensions.textHeight)) {
@@ -104,6 +105,15 @@ window.onload = () => {
                     }
                 } else {
                     game.triggerStartGame();
+                }
+            },
+
+            initRoad: () => {
+                for (let i = 0; i < game.canvas_el.width; i++) {
+                    game.road.push({
+                        x: i,
+                        y: 300 + i / 2
+                    })
                 }
             },
 
@@ -196,8 +206,13 @@ window.onload = () => {
 
                 car.fallSpeed += game.conf.gravity;
 
-                if (car.pos.y + car.tireSize * 2 > game.road[0].y && car.fallSpeed > 0)
-                    car.fallSpeed = (car.fallSpeed / 2) * -1;
+                const colidedRoads = game.road.filter(r => r.x >= game.car.pos.x && r.x <= game.car.pos.x + game.car.chassis.w) || [];
+
+                const rtXPos = game.car.pos.y + game.car.tires.rt.yOffset;
+                const ftYPos = game.car.pos.y + game.car.tires.ft.yOffset;
+                colidedRoads.forEach(r => {
+
+                });
 
                 if (car.speed > car.maxSpeed)
                     car.speed = car.maxSpeed;
@@ -206,15 +221,15 @@ window.onload = () => {
             },
 
             drawRoad: () => {
-                if (game.road.length === 0)
-                    game.road.push({
-                        x: 0,
-                        w: game.canvas_el.width,
-                        y: game.canvas_el.height - 20,
-                        h: 20
-                    });
+                game.ctx.strokeStyle = '#900';
+                game.ctx.beginPath();
+                game.ctx.moveTo(game.road[0].x, game.road[0].y);
 
-                game.ctx.fillRect(game.road[0].x, game.road[0].y, game.road[0].w, game.road[0].h);
+                game.road.forEach(r => {
+                    game.ctx.lineTo(r.x, r.y);
+                });
+
+                game.ctx.stroke();
             },
 
             updateCarPosition: () => game.car.pos.x += game.car.speed,

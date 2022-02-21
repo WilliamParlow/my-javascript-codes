@@ -225,10 +225,10 @@ const game = {
     const npc = game.npc;
     const middleNpcDeltaPosition = npc.pos.y + npc.height / 2;
 
-    if (ballY > middleNpcDeltaPosition) game.npc.ySpeed = PLAYER_SPEED;
-    else if (ballY < middleNpcDeltaPosition) game.npc.ySpeed = -PLAYER_SPEED;
+    if (ballY > middleNpcDeltaPosition + 10) game.npc.ySpeed = PLAYER_SPEED;
+    else if (ballY < middleNpcDeltaPosition - 10) game.npc.ySpeed = -PLAYER_SPEED;
     else game.npc.ySpeed = 0;
 
-    game.npc.pos.y += parseInt(game.npc.ySpeed);
+    game.npc.pos.y += =game.npc.ySpeed;
   },
 };

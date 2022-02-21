@@ -20,35 +20,6 @@ const game = {
   ball: {},
 
   start: () => {
-    window.onkeydown = (e) => {
-      if (e.keyCode == 38 && !game.isUp) {
-        game.isUp = true;
-      } else if (e.keyCode == 40 && !game.isDown) {
-        game.isDown = true;
-      }
-    };
-
-    window.onkeyup = (e) => {
-      if (e.keyCode == 38 && game.isUp) {
-        game.isUp = false;
-      } else if (e.keyCode == 40 && game.isDown) {
-        game.isDown = false;
-      }
-    };
-    
-    window.touchstart = (e) => {
-      if (e.touches[0].clientY < game.GAME_HEIGHT / 2) {
-        game.isUp = true;
-      } else {
-        game.isDown = true;
-      }
-    };
-
-    window.touchend = (e) => {
-      game.isUp = false;
-      game.isDown = false;
-    };
-
     game.canvasEl = document.querySelector("#game");
     game.ctx = game.canvasEl.getContext("2d");
     game.GAME_WIDTH = parseInt(game.canvasEl.width);
@@ -86,6 +57,37 @@ const game = {
         x: game.GAME_WIDTH / 2,
         y: game.GAME_HEIGHT / 2,
       },
+    };
+
+    window.onkeydown = (e) => {
+      if (e.keyCode == 38 && !game.isUp) {
+        game.isUp = true;
+      } else if (e.keyCode == 40 && !game.isDown) {
+        game.isDown = true;
+      }
+    };
+
+    window.onkeyup = (e) => {
+      if (e.keyCode == 38 && game.isUp) {
+        game.isUp = false;
+      } else if (e.keyCode == 40 && game.isDown) {
+        game.isDown = false;
+      }
+    };
+    
+    window.touchstart = (e) => {
+      e.preventDefault();
+      if (e.touches[0].clientY < game.GAME_HEIGHT / 2) {
+        game.isUp = true;
+      } else {
+        game.isDown = true;
+      }
+    };
+
+    window.touchend = (e) => {
+      e.preventDefault();
+      game.isUp = false;
+      game.isDown = false;
     };
 
     game.animationId = requestAnimationFrame(game.updateGameWindow);

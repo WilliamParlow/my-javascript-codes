@@ -110,6 +110,7 @@ const game = {
     } else {
       game.showGameOver();
       cancelAnimationFrame(game.animationId);
+      game.start();
     }
   },
 

@@ -229,6 +229,6 @@ const game = {
     else if (ballY < middleNpcDeltaPosition) game.npc.ySpeed = -PLAYER_SPEED;
     else game.npc.ySpeed = 0;
 
-    game.npc.pos.y += game.npc.ySpeed;
+    game.npc.pos.y += parseInt(game.npc.ySpeed);
   },
 };

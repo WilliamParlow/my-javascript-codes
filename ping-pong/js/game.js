@@ -35,6 +35,19 @@ const game = {
         game.isDown = false;
       }
     };
+    
+    window.touchstart = (e) => {
+      if (e.touches[0].clientY < game.GAME_HEIGHT / 2) {
+        game.isUp = true;
+      } else {
+        game.isDown = true;
+      }
+    };
+
+    window.touchend = (e) => {
+      game.isUp = false;
+      game.isDown = false;
+    };
 
     game.canvasEl = document.querySelector("#game");
     game.ctx = game.canvasEl.getContext("2d");

@@ -24,6 +24,9 @@ const game = {
     game.ctx = game.canvasEl.getContext("2d");
     game.GAME_WIDTH = parseInt(game.canvasEl.width);
     game.GAME_HEIGHT = parseInt(game.canvasEl.height);
+    game.isAlive = true;
+    game.isDown = false;
+    game.isUp = false;
 
     game.player = {
       ySpeed: 0,

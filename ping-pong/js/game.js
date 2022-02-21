@@ -75,7 +75,7 @@ const game = {
       }
     };
     
-    window.touchstart = (e) => {
+    window.ontouchstart = (e) => {
       e.preventDefault();
       if (e.touches[0].clientY < game.GAME_HEIGHT / 2) {
         game.isUp = true;
@@ -84,7 +84,7 @@ const game = {
       }
     };
 
-    window.touchend = (e) => {
+    window.ontouchend = (e) => {
       e.preventDefault();
       game.isUp = false;
       game.isDown = false;

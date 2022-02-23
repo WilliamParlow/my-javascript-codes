@@ -1,6 +1,5 @@
 const PLAYER_HEIGHT = 100;
 const HALF_PLAYER_HEIGHT = PLAYER_HEIGHT / 2;
-const PLAYER_SPEED = 4;
 
 const game = {
   canvasEl: undefined,
@@ -9,8 +8,10 @@ const game = {
 
   GAME_WIDTH: 0,
   GAME_HEIGHT: 0,
+  PLAYER_SPEED: 0,
 
   animationId: undefined,
+  intervalId: undefined,
   isAlive: true,
   isDown: false,
   isUp: false,
@@ -24,9 +25,12 @@ const game = {
     game.ctx = game.canvasEl.getContext("2d");
     game.GAME_WIDTH = parseInt(game.canvasEl.width);
     game.GAME_HEIGHT = parseInt(game.canvasEl.height);
+    game.PLAYER_SPEED = 4;
     game.isAlive = true;
     game.isDown = false;
     game.isUp = false;
+    
+    game.intervalId = setInterval(() => game.PLAYER_SPEED += 1, 10000)
 
     game.player = {
       ySpeed: 0,
@@ -113,6 +117,7 @@ const game = {
     } else {
       game.showGameOver();
       cancelAnimationFrame(game.animationId);
+      clearInterval(game.intervalId);
       game.start();
     }
   },
@@ -214,8 +219,8 @@ const game = {
   },
 
   updatePlayerPosition: () => {
-    if (game.isUp) game.player.ySpeed = -PLAYER_SPEED;
-    else if (game.isDown) game.player.ySpeed = PLAYER_SPEED;
+    if (game.isUp) game.player.ySpeed = -game.PLAYER_SPEED;
+    else if (game.isDown) game.player.ySpeed = game.PLAYER_SPEED;
     else game.player.ySpeed = 0;
 
     game.player.pos.y += game.player.ySpeed;
@@ -225,8 +230,8 @@ const game = {
     const npc = game.npc;
     const middleNpcDeltaPosition = npc.pos.y + npc.height / 2;
 
-    if (ballY > middleNpcDeltaPosition + 10) game.npc.ySpeed = PLAYER_SPEED;
-    else if (ballY < middleNpcDeltaPosition - 10) game.npc.ySpeed = -PLAYER_SPEED;
+    if (ballY > middleNpcDeltaPosition + 10) game.npc.ySpeed = game.PLAYER_SPEED;
+    else if (ballY < middleNpcDeltaPosition - 10) game.npc.ySpeed = -game.PLAYER_SPEED;
     else game.npc.ySpeed = 0;
 
     game.npc.pos.y += game.npc.ySpeed;

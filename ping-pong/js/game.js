@@ -35,7 +35,7 @@ const game = {
     game.isUp = false;
     
     game.intervalId = setInterval(() => {
-      if (game.PLAYER_SPEED < 10) game.PLAYER_SPEED += 1;
+      if (game.PLAYER_SPEED < 7) game.PLAYER_SPEED += 1;
       if (game.BALL_XSPEED < 16) game.BALL_XSPEED += 1;
       if (game.BALL_YSPEED_DIVIDER > 1) game.BALL_YSPEED_DIVIDER -= 1;
     }, 10000)
@@ -188,7 +188,7 @@ const game = {
     ) {
       game.ball.direction = "r";
       const ballAngleDelta =
-        2 * (ballY - (playerHeightAndY - game.player.height / 2));
+        3 * (ballY - (playerHeightAndY - game.player.height / 2));
 
       if (ballAngleDelta < 0 || ballAngleDelta > 0) {
         game.ball.ySpeed = parseInt(ballAngleDelta / game.BALL_YSPEED_DIVIDER);
@@ -203,7 +203,7 @@ const game = {
     ) {
       game.ball.direction = "l";
       const ballAngleDelta =
-        2 * (ballY - (npcHeightAndY - game.npc.height / 2));
+        3 * (ballY - (npcHeightAndY - game.npc.height / 2));
 
       if (ballAngleDelta < 0 || ballAngleDelta > 0) {
         game.ball.ySpeed = parseInt(ballAngleDelta / game.BALL_YSPEED_DIVIDER);

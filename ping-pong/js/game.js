@@ -35,7 +35,7 @@ const game = {
     game.isUp = false;
     
     game.intervalId = setInterval(() => {
-      if (game.PLAYER_SPEED < 6) game.PLAYER_SPEED += 1;
+      if (game.PLAYER_SPEED < 5) game.PLAYER_SPEED += 1;
       if (game.BALL_XSPEED < 12) game.BALL_XSPEED += 1;
       if (game.BALL_YSPEED_DIVIDER > 1) game.BALL_YSPEED_DIVIDER -= 1;
     }, 10000)

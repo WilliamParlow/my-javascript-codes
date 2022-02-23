@@ -191,7 +191,7 @@ const game = {
         2 * (ballY - (playerHeightAndY - game.player.height / 2));
 
       if (ballAngleDelta < 0 || ballAngleDelta > 0) {
-        game.ball.ySpeed = ballAngleDelta / game.BALL_YSPEED_DIVIDER;
+        game.ball.ySpeed = parseInt(ballAngleDelta / game.BALL_YSPEED_DIVIDER);
       } else {
         game.ball.ySpeed = 0;
       }
@@ -206,7 +206,7 @@ const game = {
         2 * (ballY - (npcHeightAndY - game.npc.height / 2));
 
       if (ballAngleDelta < 0 || ballAngleDelta > 0) {
-        game.ball.ySpeed = ballAngleDelta / game.BALL_YSPEED_DIVIDER;
+        game.ball.ySpeed = parseInt(ballAngleDelta / game.BALL_YSPEED_DIVIDER);
       } else {
         game.ball.ySpeed = 0;
       }

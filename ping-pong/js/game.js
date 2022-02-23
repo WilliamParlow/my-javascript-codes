@@ -66,7 +66,7 @@ const game = {
     game.ball = {
       radius: 8,
       direction: direction,
-      xSpeed: direction == "r" ? game.BALL_SPEED : -game.BALL_SPEED,
+      xSpeed: direction == "r" ? game.BALL_XSPEED : -game.BALL_XSPEED,
       ySpeed: 0,
       pos: {
         x: game.GAME_WIDTH / 2,
